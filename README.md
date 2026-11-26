@@ -13,6 +13,7 @@ O Limiar investiga o que arquiteturas compactas conseguem fazer sob restrições
 | **ICARUS** · Eficiência computacional | Quanto trabalho pode ser evitado com computação seletiva dentro de um limite de perda de qualidade? | [Seis experimentos do Ciclo I e publicações de ATHENA, GAUSS, ATLAS e OMEGA](pesquisa/README.md) |
 | **CERBERUS Fase II** · Resiliência de software | Como validar, ativar e restaurar configurações preservando a consistência do serviço? | [Serviço local, CLI, testes e modelos executáveis](cerberus/phase-ii/README.md) |
 | **OUROBOROS Fase II** · O Limiar da Serpente | Que propriedades uma rede de Feistel de 16 bits apresenta em condições experimentais controladas? | [Laboratório offline, dados sintéticos e roteiro de reprodução](ouroboros/phase2/README.md) |
+| **PULSE Fase II** · Project Genesis | Como escalonar trabalho nativo sob um orçamento de memória e adaptar a carga durante a execução? | [Núcleo C17, CLI, testes e benchmarks](PULSE/README.md) |
 | **JANUS** · Beyond Language | Uma arquitetura compacta consegue representar significado, interpretar contexto e produzir inferências verificáveis sem depender de um LLM em execução? | [Protocolo, hipóteses e roadmap](janus/README.md) |
 
 ## JANUS · Beyond Language
