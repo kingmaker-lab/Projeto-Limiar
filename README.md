@@ -35,3 +35,7 @@ O roteiro segue com **NOESIS** para avaliar generalização, **GNOSIS** para int
 - **Consultar resultados.** O [índice de publicações](pesquisa/README.md) aponta para os commits da The Workshop que registram os experimentos e artigos.
 - **Executar os laboratórios.** Os guias de [CERBERUS](cerberus/phase-ii/README.md) e [OUROBOROS](ouroboros/phase2/README.md) registram requisitos, comandos e procedimentos de teste. O laboratório de OUROBOROS usa dados sintéticos e tem finalidade de pesquisa.
 - **Acompanhar hipóteses abertas.** A [metodologia do JANUS](janus/README.md#metodologia-experimental) descreve como comparar qualidade, generalização, latência e consumo de recursos. O protocolo prevê a publicação de resultados negativos e inconclusivos.
+
+## Mobile Division
+
+[Primeiros passos no bug bounty pelo celular](mobile/bug-bounty/README.md) reúne leitura de escopo, um exercício offline e um modelo de relatório.

@@ -1,0 +1,10 @@
+{
+  "aplicativo": "Caderno (fictício)",
+  "recurso": "rascunho privado",
+  "acao": "ler",
+  "casos": [
+    {"id": "C1", "papel": "membro", "relacao": "proprietario", "decisao": "permitir"},
+    {"id": "C2", "papel": "membro", "relacao": "outra_pessoa", "decisao": "permitir"},
+    {"id": "C3", "papel": "visitante", "relacao": "sem_conta", "decisao": "negar"}
+  ]
+}
