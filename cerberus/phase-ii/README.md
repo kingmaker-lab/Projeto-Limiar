@@ -45,4 +45,4 @@ Para iniciar o consumidor, execute `python3 -m cerberus --key operator.key --db 
 - [Histórico e integração GitHub](docs/history.md)
 - [Evidência local](docs/verification.md)
 - [Modelos executáveis em Assembly, Java e Pascal](models/README.md)
-
+- [Backup SQLite em C](c-backup/README.md)
