@@ -45,4 +45,5 @@ Para iniciar o consumidor, execute `python3 -m cerberus --key operator.key --db 
 - [Histórico e integração GitHub](docs/history.md)
 - [Evidência local](docs/verification.md)
 - [Modelos executáveis em Assembly, Java e Pascal](models/README.md)
-
+- [Testemunha de continuidade em Ruby](ruby-witness/README.md)
+- [Motor determinístico de admissão em Lua](lua-policy/README.md)

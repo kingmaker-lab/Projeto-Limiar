@@ -1,0 +1,32 @@
+name: CERBERUS Ruby e Lua
+on:
+  push:
+    paths:
+      - "cerberus/phase-ii/ruby-witness/**"
+      - "cerberus/phase-ii/lua-policy/**"
+      - "cerberus/phase-ii/cerberus/**"
+      - ".github/workflows/cerberus-ruby-lua.yml"
+  pull_request:
+    paths:
+      - "cerberus/phase-ii/ruby-witness/**"
+      - "cerberus/phase-ii/lua-policy/**"
+      - "cerberus/phase-ii/cerberus/**"
+      - ".github/workflows/cerberus-ruby-lua.yml"
+permissions:
+  contents: read
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    container: debian:13-slim
+    steps:
+      - run: |
+          apt-get update
+          apt-get install -y --no-install-recommends ca-certificates git ruby lua5.4 python3
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s ruby-witness -v
+        working-directory: cerberus/phase-ii
+      - run: python3 -m unittest discover -s lua-policy -v
+        working-directory: cerberus/phase-ii
