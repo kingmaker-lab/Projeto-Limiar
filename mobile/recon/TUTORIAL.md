@@ -114,3 +114,16 @@ cat relatorio.md
 Copie a ficha JSON e preencha os campos com texto. O Markdown mantém o esperado, o observado e o impacto em seções próprias. Campos vazios aparecem como `[A preencher]`. Na ficha de treino, o impacto depende da aplicação da política fictícia. Em um relatório real, revise as afirmações, confira a autorização e envie pelo canal privado indicado pelo programa.
 
 O exercício termina quando você consegue apontar a mudança de escopo, verificar a integridade do arquivo e explicar uma observação no rascunho. Para conferir a instalação, rode `python3 -m unittest -v`.
+
+## Prepare uma entrega verificável
+
+Depois da prática, abra a pasta indicada por `pratica.sh` e revise o relatório e o resumo HTTP. Da pasta do kit, use os caminhos reais da sua execução no lugar de `PASTA_DA_PRATICA`:
+
+```sh
+python3 entrega.py criar entrega-revisada PASTA_DA_PRATICA/relatorio.md PASTA_DA_PRATICA/resumo-http.json
+python3 entrega.py verificar entrega-revisada
+```
+
+A pasta de destino precisa ser nova. Ela recebe cópias dos arquivos indicados e um `manifesto.json` com nome, tamanho e SHA-256 de cada cópia. Guarde o manifesto original para comparações futuras. Depois de transferir a pasta, execute o verificador na cópia. Três listas vazias indicam que todos os arquivos conferem com o manifesto. O comando devolve 1 se encontrar arquivos ausentes, extras ou divergentes, e 2 se houver problema de entrada ou leitura.
+
+A ferramenta compara a integridade com o manifesto apresentado. Se alguém puder substituir também o manifesto, poderá recalcular os hashes. Revise os próprios arquivos antes de montar a entrega, pois as cópias preservam o conteúdo byte a byte. O comando trabalha localmente.

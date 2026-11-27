@@ -95,14 +95,18 @@ def share_headers(args):
     }
 
 
-def evidence_hash(args):
+def file_digest(path):
     digest = sha256()
     size = 0
-    with args.arquivo.open("rb") as source:
+    with path.open("rb") as source:
         for block in iter(lambda: source.read(65536), b""):
             digest.update(block)
             size += len(block)
     return {"bytes": size, "sha256": digest.hexdigest()}
+
+
+def evidence_hash(args):
+    return file_digest(args.arquivo)
 
 
 def verify_evidence(args):

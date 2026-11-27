@@ -4,6 +4,8 @@
 
 Execute `sh pratica.sh` para rodar as dez ferramentas com o Caderno. O [tutorial](TUTORIAL.md) mostra como revisar os resultados e usar cada ferramenta separadamente.
 
+O [fluxo de entrega](TUTORIAL.md#prepare-uma-entrega-verificável) reúne os arquivos escolhidos com manifesto SHA-256 e verifica a cópia depois da transferência.
+
 Ferramenta de linha de comando para organizar URLs que você já coletou. Compara as origens com uma lista de escopo declarada por você, remove duplicatas e produz um inventário JSON. Funciona sem conexão depois que os arquivos e o Python estiverem instalados. A ferramenta lê apenas arquivos locais.
 
 ## Executar no Android com Termux
