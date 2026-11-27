@@ -19,3 +19,13 @@ GOMAXPROCS=1 GOMEMLIMIT=32MiB taskset -c 0 go test -run '^$' -bench BenchmarkAud
 A demonstração completa levou 0,58 s nessa configuração. O limite de memória é uma meta do runtime Go. As alocações do benchmark representam o total acumulado por operação e não medem o pico de memória residente. O benchmark mede o replay de blocos em memória, sem incluir leitura e regravação do arquivo.
 
 Os READMEs originais registram as publicações no Cloudflare Pages. Para o EXP-003, relatam 15 verificações de protocolo e 10 de interface na prévia HTTPS. A execução acima repetiu as suítes Node preservadas. A implantação Cloudflare e os testes de navegador ficaram fora desta rodada.
+
+## Sincronização local
+
+- `go test -count=1 -v ./...` e `go vet ./...` passaram. A suíte de rede abriu portas reais em `127.0.0.1` e verificou atualização, repetição, par atrasado, divergência, rede incorreta, adulteração, redirecionamento, limite de tamanho e conteúdo adicional.
+- `sh demo-sync.sh ./atlas` passou duas vezes. A origem foi reiniciada em outra porta e a réplica terminou com o mesmo arquivo de ledger, dois blocos, emissão de 100 unidades e 17 unidades na conta de Bob. O fluxo original também passou.
+- No mesmo Celeron N4020, com afinidade a um núcleo e meta de memória de 32 MiB, uma execução completa de `demo-sync.sh` levou 0,71 s. O binário estático com suporte HTTP ficou em 6.467.768 bytes.
+
+```sh
+GOMAXPROCS=1 GOMEMLIMIT=32MiB taskset -c 0 sh demo-sync.sh ./atlas
+```

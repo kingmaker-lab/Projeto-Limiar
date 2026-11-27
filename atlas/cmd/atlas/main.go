@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"crypto/ecdsa"
 	"crypto/elliptic"
 	"crypto/rand"
@@ -19,6 +20,8 @@ import (
 const usage = `atlas [-dir DIRETÓRIO] init
 atlas wallet ARQUIVO
 atlas [-dir DIRETÓRIO] status
+atlas [-dir DIRETÓRIO] serve PORTA
+atlas [-dir DIRETÓRIO] sync PORTA REDE
 atlas [-dir DIRETÓRIO] mine ENDEREÇO [TRANSFERÊNCIA.json]
 atlas [-dir DIRETÓRIO] sign CARTEIRA DESTINO VALOR > TRANSFERÊNCIA.json`
 
@@ -56,6 +59,22 @@ func run(dir string, args []string) error {
 			return err
 		}
 		return json.NewEncoder(os.Stdout).Encode(state)
+	case len(args) == 2 && args[0] == "serve":
+		port, err := parsePort(args[1])
+		if err != nil {
+			return err
+		}
+		return atlas.ServePeer(dir, port, func(address string) { fmt.Println(address) })
+	case len(args) == 3 && args[0] == "sync":
+		port, err := parsePort(args[1])
+		if err != nil {
+			return err
+		}
+		state, err := atlas.Sync(context.Background(), dir, port, args[2])
+		if err != nil {
+			return err
+		}
+		return json.NewEncoder(os.Stdout).Encode(state)
 	case len(args) >= 2 && len(args) <= 3 && args[0] == "mine":
 		return mine(dir, args[1:])
 	case len(args) == 4 && args[0] == "sign":
@@ -63,6 +82,14 @@ func run(dir string, args []string) error {
 	default:
 		return errors.New(usage)
 	}
+}
+
+func parsePort(value string) (uint16, error) {
+	port, err := strconv.ParseUint(value, 10, 16)
+	if err != nil {
+		return 0, fmt.Errorf("porta inválida: %w", err)
+	}
+	return uint16(port), nil
 }
 
 func wallet(path string) error {

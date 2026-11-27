@@ -25,7 +25,11 @@ func ReadJSON(path string, limit int64, dst any) error {
 	if !info.Mode().IsRegular() || info.Size() > limit {
 		return errors.New("tipo ou tamanho de arquivo inválido")
 	}
-	reader := &io.LimitedReader{R: file, N: limit + 1}
+	return decodeJSON(file, limit, dst)
+}
+
+func decodeJSON(source io.Reader, limit int64, dst any) error {
+	reader := &io.LimitedReader{R: source, N: limit + 1}
 	decoder := json.NewDecoder(reader)
 	decoder.DisallowUnknownFields()
 	if err := decoder.Decode(dst); err != nil {
@@ -47,7 +51,7 @@ func Load(dir string) (*Ledger, error) {
 }
 
 // Update serializes every writer using the directory inode, which remains
-// stable when ledger.json is replaced.
+// stable when ledger.json is replaced. A nil result skips the write.
 func Update(dir string, update func(*Ledger) (*Ledger, error)) error {
 	lock, err := os.Open(dir)
 	if err != nil {
@@ -62,7 +66,7 @@ func Update(dir string, update func(*Ledger) (*Ledger, error)) error {
 		return err
 	}
 	next, err := update(ledger)
-	if err != nil {
+	if err != nil || next == nil {
 		return err
 	}
 	if _, err := next.Audit(); err != nil {
