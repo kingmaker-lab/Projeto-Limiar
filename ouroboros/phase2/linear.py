@@ -23,11 +23,11 @@ def linear_tail_bound(size, overlap):
     return min(Fraction(1), 2 * first / (1 - ratio))
 
 
-def cutoff():
+def cutoff(family_size=FAMILY_SIZE):
     low, high = SIZE // 4 + 1, SIZE // 2
     while low < high:
         middle = (low + high) // 2
-        if FAMILY_SIZE * linear_tail_bound(SIZE, middle) < ALPHA:
+        if family_size * linear_tail_bound(SIZE, middle) < ALPHA:
             high = middle
         else:
             low = middle + 1

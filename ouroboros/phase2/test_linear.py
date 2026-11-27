@@ -26,3 +26,13 @@ class LinearTests(unittest.TestCase):
         overlap = (cutoff() + SIZE) // 4
         self.assertLess(FAMILY_SIZE * linear_tail_bound(SIZE, overlap), ALPHA)
         self.assertGreaterEqual(FAMILY_SIZE * linear_tail_bound(SIZE, overlap - 1), ALPHA)
+
+    def test_compound_masks_use_parity(self):
+        from .linear_weight2 import MASKS, parity_planes
+
+        values = [0, 1, 2, 3, 65535]
+        for masks, planes in zip(MASKS, parity_planes(values), strict=True):
+            for mask, plane in zip(masks, planes, strict=True):
+                expected = sum(((value & mask).bit_count() % 2) << i
+                               for i, value in enumerate(values))
+                self.assertEqual(plane, expected)

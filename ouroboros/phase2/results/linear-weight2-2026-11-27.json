@@ -1,0 +1,986 @@
+{
+  "domain_size": 65536,
+  "family_size": 443904,
+  "alpha": 0.01,
+  "absolute_walsh_cutoff": 1436,
+  "feistel": {
+    "58aa2430": {
+      "8": {
+        "1x1": {
+          "max_abs_walsh": 856,
+          "signed_walsh": 856,
+          "input_mask": "4000",
+          "output_mask": "0080",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 940,
+          "signed_walsh": 940,
+          "input_mask": "1000",
+          "output_mask": "4004",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 1064,
+          "signed_walsh": -1064,
+          "input_mask": "6000",
+          "output_mask": "0400",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1124,
+          "signed_walsh": 1124,
+          "input_mask": "0003",
+          "output_mask": "2004",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "9": {
+        "1x1": {
+          "max_abs_walsh": 856,
+          "signed_walsh": 856,
+          "input_mask": "4000",
+          "output_mask": "8000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 936,
+          "signed_walsh": -936,
+          "input_mask": "4000",
+          "output_mask": "8080",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 940,
+          "signed_walsh": -940,
+          "input_mask": "0028",
+          "output_mask": "0040",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1092,
+          "signed_walsh": 1092,
+          "input_mask": "2400",
+          "output_mask": "0401",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "12": {
+        "1x1": {
+          "max_abs_walsh": 632,
+          "signed_walsh": -632,
+          "input_mask": "0080",
+          "output_mask": "8000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 1096,
+          "signed_walsh": 1096,
+          "input_mask": "0080",
+          "output_mask": "0012",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 956,
+          "signed_walsh": 956,
+          "input_mask": "8008",
+          "output_mask": "1000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1040,
+          "signed_walsh": 1040,
+          "input_mask": "0480",
+          "output_mask": "4010",
+          "cells_at_or_above_cutoff": 0
+        }
+      }
+    },
+    "d5418e4b": {
+      "8": {
+        "1x1": {
+          "max_abs_walsh": 900,
+          "signed_walsh": -900,
+          "input_mask": "0008",
+          "output_mask": "0200",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 1076,
+          "signed_walsh": -1076,
+          "input_mask": "0020",
+          "output_mask": "0802",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 916,
+          "signed_walsh": -916,
+          "input_mask": "0500",
+          "output_mask": "0800",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1184,
+          "signed_walsh": 1184,
+          "input_mask": "2200",
+          "output_mask": "1080",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "9": {
+        "1x1": {
+          "max_abs_walsh": 700,
+          "signed_walsh": -700,
+          "input_mask": "0004",
+          "output_mask": "0400",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 1044,
+          "signed_walsh": -1044,
+          "input_mask": "0004",
+          "output_mask": "0808",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 804,
+          "signed_walsh": 804,
+          "input_mask": "5000",
+          "output_mask": "0800",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1036,
+          "signed_walsh": 1036,
+          "input_mask": "0404",
+          "output_mask": "0c00",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "12": {
+        "1x1": {
+          "max_abs_walsh": 712,
+          "signed_walsh": 712,
+          "input_mask": "4000",
+          "output_mask": "0800",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 1000,
+          "signed_walsh": 1000,
+          "input_mask": "0040",
+          "output_mask": "0804",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 1108,
+          "signed_walsh": 1108,
+          "input_mask": "0044",
+          "output_mask": "0400",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1052,
+          "signed_walsh": 1052,
+          "input_mask": "1040",
+          "output_mask": "0009",
+          "cells_at_or_above_cutoff": 0
+        }
+      }
+    },
+    "b12434b5": {
+      "8": {
+        "1x1": {
+          "max_abs_walsh": 816,
+          "signed_walsh": -816,
+          "input_mask": "0200",
+          "output_mask": "0002",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 908,
+          "signed_walsh": -908,
+          "input_mask": "0080",
+          "output_mask": "4004",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 996,
+          "signed_walsh": 996,
+          "input_mask": "0300",
+          "output_mask": "1000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1104,
+          "signed_walsh": -1104,
+          "input_mask": "4040",
+          "output_mask": "4200",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "9": {
+        "1x1": {
+          "max_abs_walsh": 816,
+          "signed_walsh": -816,
+          "input_mask": "0200",
+          "output_mask": "0200",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 888,
+          "signed_walsh": -888,
+          "input_mask": "0010",
+          "output_mask": "0104",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 976,
+          "signed_walsh": 976,
+          "input_mask": "2040",
+          "output_mask": "4000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1024,
+          "signed_walsh": -1024,
+          "input_mask": "4010",
+          "output_mask": "0240",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "12": {
+        "1x1": {
+          "max_abs_walsh": 832,
+          "signed_walsh": 832,
+          "input_mask": "0008",
+          "output_mask": "0004",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 864,
+          "signed_walsh": 864,
+          "input_mask": "4000",
+          "output_mask": "0003",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 1032,
+          "signed_walsh": 1032,
+          "input_mask": "0440",
+          "output_mask": "8000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1068,
+          "signed_walsh": -1068,
+          "input_mask": "1020",
+          "output_mask": "8200",
+          "cells_at_or_above_cutoff": 0
+        }
+      }
+    },
+    "68b4344d": {
+      "8": {
+        "1x1": {
+          "max_abs_walsh": 800,
+          "signed_walsh": -800,
+          "input_mask": "0040",
+          "output_mask": "0008",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 916,
+          "signed_walsh": -916,
+          "input_mask": "0800",
+          "output_mask": "0410",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 972,
+          "signed_walsh": -972,
+          "input_mask": "0240",
+          "output_mask": "0200",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1180,
+          "signed_walsh": 1180,
+          "input_mask": "5000",
+          "output_mask": "4004",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "9": {
+        "1x1": {
+          "max_abs_walsh": 800,
+          "signed_walsh": -800,
+          "input_mask": "0040",
+          "output_mask": "0800",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 832,
+          "signed_walsh": 832,
+          "input_mask": "0010",
+          "output_mask": "0090",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 1076,
+          "signed_walsh": -1076,
+          "input_mask": "5000",
+          "output_mask": "0001",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1012,
+          "signed_walsh": 1012,
+          "input_mask": "5000",
+          "output_mask": "0101",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "12": {
+        "1x1": {
+          "max_abs_walsh": 740,
+          "signed_walsh": 740,
+          "input_mask": "0001",
+          "output_mask": "0002",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 900,
+          "signed_walsh": 900,
+          "input_mask": "0004",
+          "output_mask": "0050",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 892,
+          "signed_walsh": 892,
+          "input_mask": "4080",
+          "output_mask": "0080",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1128,
+          "signed_walsh": -1128,
+          "input_mask": "8200",
+          "output_mask": "0041",
+          "cells_at_or_above_cutoff": 0
+        }
+      }
+    },
+    "c792c1ee": {
+      "8": {
+        "1x1": {
+          "max_abs_walsh": 700,
+          "signed_walsh": -700,
+          "input_mask": "1000",
+          "output_mask": "4000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 960,
+          "signed_walsh": 960,
+          "input_mask": "4000",
+          "output_mask": "2200",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 920,
+          "signed_walsh": 920,
+          "input_mask": "2008",
+          "output_mask": "2000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 956,
+          "signed_walsh": -956,
+          "input_mask": "0880",
+          "output_mask": "4100",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "9": {
+        "1x1": {
+          "max_abs_walsh": 608,
+          "signed_walsh": 608,
+          "input_mask": "0020",
+          "output_mask": "0004",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 868,
+          "signed_walsh": 868,
+          "input_mask": "0010",
+          "output_mask": "0011",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 848,
+          "signed_walsh": -848,
+          "input_mask": "000c",
+          "output_mask": "8000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1100,
+          "signed_walsh": 1100,
+          "input_mask": "2100",
+          "output_mask": "8008",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "12": {
+        "1x1": {
+          "max_abs_walsh": 816,
+          "signed_walsh": -816,
+          "input_mask": "0080",
+          "output_mask": "0200",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 1052,
+          "signed_walsh": 1052,
+          "input_mask": "0008",
+          "output_mask": "0220",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 1072,
+          "signed_walsh": -1072,
+          "input_mask": "0401",
+          "output_mask": "0800",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1188,
+          "signed_walsh": -1188,
+          "input_mask": "8100",
+          "output_mask": "1004",
+          "cells_at_or_above_cutoff": 0
+        }
+      }
+    },
+    "1a573218": {
+      "8": {
+        "1x1": {
+          "max_abs_walsh": 772,
+          "signed_walsh": -772,
+          "input_mask": "2000",
+          "output_mask": "0002",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 1036,
+          "signed_walsh": -1036,
+          "input_mask": "0002",
+          "output_mask": "0022",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 832,
+          "signed_walsh": -832,
+          "input_mask": "0082",
+          "output_mask": "0400",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1080,
+          "signed_walsh": -1080,
+          "input_mask": "2080",
+          "output_mask": "0280",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "9": {
+        "1x1": {
+          "max_abs_walsh": 792,
+          "signed_walsh": 792,
+          "input_mask": "0400",
+          "output_mask": "0002",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 1036,
+          "signed_walsh": -1036,
+          "input_mask": "0002",
+          "output_mask": "2200",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 800,
+          "signed_walsh": 800,
+          "input_mask": "4002",
+          "output_mask": "2000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1192,
+          "signed_walsh": -1192,
+          "input_mask": "0840",
+          "output_mask": "1008",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "12": {
+        "1x1": {
+          "max_abs_walsh": 704,
+          "signed_walsh": -704,
+          "input_mask": "0100",
+          "output_mask": "0400",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 880,
+          "signed_walsh": -880,
+          "input_mask": "0004",
+          "output_mask": "0081",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 992,
+          "signed_walsh": 992,
+          "input_mask": "8040",
+          "output_mask": "0800",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1128,
+          "signed_walsh": -1128,
+          "input_mask": "0820",
+          "output_mask": "0102",
+          "cells_at_or_above_cutoff": 0
+        }
+      }
+    },
+    "d09c7255": {
+      "8": {
+        "1x1": {
+          "max_abs_walsh": 776,
+          "signed_walsh": -776,
+          "input_mask": "0040",
+          "output_mask": "0004",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 908,
+          "signed_walsh": 908,
+          "input_mask": "0040",
+          "output_mask": "4100",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 892,
+          "signed_walsh": 892,
+          "input_mask": "0404",
+          "output_mask": "0010",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1052,
+          "signed_walsh": -1052,
+          "input_mask": "0050",
+          "output_mask": "0140",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "9": {
+        "1x1": {
+          "max_abs_walsh": 776,
+          "signed_walsh": -776,
+          "input_mask": "0040",
+          "output_mask": "0400",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 872,
+          "signed_walsh": -872,
+          "input_mask": "2000",
+          "output_mask": "c000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 892,
+          "signed_walsh": 892,
+          "input_mask": "0404",
+          "output_mask": "1000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1220,
+          "signed_walsh": 1220,
+          "input_mask": "0084",
+          "output_mask": "2001",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "12": {
+        "1x1": {
+          "max_abs_walsh": 916,
+          "signed_walsh": 916,
+          "input_mask": "0010",
+          "output_mask": "0040",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 1044,
+          "signed_walsh": -1044,
+          "input_mask": "0800",
+          "output_mask": "0005",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 1000,
+          "signed_walsh": 1000,
+          "input_mask": "2010",
+          "output_mask": "0001",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1036,
+          "signed_walsh": -1036,
+          "input_mask": "2008",
+          "output_mask": "0440",
+          "cells_at_or_above_cutoff": 0
+        }
+      }
+    },
+    "0ba3960c": {
+      "8": {
+        "1x1": {
+          "max_abs_walsh": 840,
+          "signed_walsh": 840,
+          "input_mask": "0001",
+          "output_mask": "1000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 1188,
+          "signed_walsh": -1188,
+          "input_mask": "0040",
+          "output_mask": "0880",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 1000,
+          "signed_walsh": -1000,
+          "input_mask": "8020",
+          "output_mask": "1000",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1028,
+          "signed_walsh": 1028,
+          "input_mask": "1100",
+          "output_mask": "2002",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "9": {
+        "1x1": {
+          "max_abs_walsh": 648,
+          "signed_walsh": -648,
+          "input_mask": "1000",
+          "output_mask": "0800",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 860,
+          "signed_walsh": 860,
+          "input_mask": "2000",
+          "output_mask": "0880",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 856,
+          "signed_walsh": 856,
+          "input_mask": "0440",
+          "output_mask": "0100",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1036,
+          "signed_walsh": 1036,
+          "input_mask": "4001",
+          "output_mask": "0201",
+          "cells_at_or_above_cutoff": 0
+        }
+      },
+      "12": {
+        "1x1": {
+          "max_abs_walsh": 648,
+          "signed_walsh": -648,
+          "input_mask": "0008",
+          "output_mask": "0008",
+          "cells_at_or_above_cutoff": 0
+        },
+        "1x2": {
+          "max_abs_walsh": 872,
+          "signed_walsh": -872,
+          "input_mask": "0002",
+          "output_mask": "4400",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x1": {
+          "max_abs_walsh": 860,
+          "signed_walsh": 860,
+          "input_mask": "2002",
+          "output_mask": "0004",
+          "cells_at_or_above_cutoff": 0
+        },
+        "2x2": {
+          "max_abs_walsh": 1008,
+          "signed_walsh": -1008,
+          "input_mask": "0402",
+          "output_mask": "0401",
+          "cells_at_or_above_cutoff": 0
+        }
+      }
+    }
+  },
+  "controls": {
+    "20261201": {
+      "1x1": {
+        "max_abs_walsh": 736,
+        "signed_walsh": -736,
+        "input_mask": "0010",
+        "output_mask": "0008",
+        "cells_at_or_above_cutoff": 0
+      },
+      "1x2": {
+        "max_abs_walsh": 904,
+        "signed_walsh": 904,
+        "input_mask": "0020",
+        "output_mask": "2040",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x1": {
+        "max_abs_walsh": 864,
+        "signed_walsh": -864,
+        "input_mask": "c000",
+        "output_mask": "0040",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x2": {
+        "max_abs_walsh": 1056,
+        "signed_walsh": -1056,
+        "input_mask": "0018",
+        "output_mask": "8001",
+        "cells_at_or_above_cutoff": 0
+      }
+    },
+    "20261202": {
+      "1x1": {
+        "max_abs_walsh": 792,
+        "signed_walsh": 792,
+        "input_mask": "0100",
+        "output_mask": "0010",
+        "cells_at_or_above_cutoff": 0
+      },
+      "1x2": {
+        "max_abs_walsh": 992,
+        "signed_walsh": 992,
+        "input_mask": "2000",
+        "output_mask": "0120",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x1": {
+        "max_abs_walsh": 932,
+        "signed_walsh": -932,
+        "input_mask": "2080",
+        "output_mask": "1000",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x2": {
+        "max_abs_walsh": 1040,
+        "signed_walsh": -1040,
+        "input_mask": "0480",
+        "output_mask": "0840",
+        "cells_at_or_above_cutoff": 0
+      }
+    },
+    "20261203": {
+      "1x1": {
+        "max_abs_walsh": 700,
+        "signed_walsh": 700,
+        "input_mask": "0400",
+        "output_mask": "0002",
+        "cells_at_or_above_cutoff": 0
+      },
+      "1x2": {
+        "max_abs_walsh": 1024,
+        "signed_walsh": -1024,
+        "input_mask": "0200",
+        "output_mask": "2400",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x1": {
+        "max_abs_walsh": 836,
+        "signed_walsh": 836,
+        "input_mask": "2001",
+        "output_mask": "0010",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x2": {
+        "max_abs_walsh": 1108,
+        "signed_walsh": 1108,
+        "input_mask": "8020",
+        "output_mask": "0042",
+        "cells_at_or_above_cutoff": 0
+      }
+    },
+    "20261204": {
+      "1x1": {
+        "max_abs_walsh": 792,
+        "signed_walsh": -792,
+        "input_mask": "0400",
+        "output_mask": "0400",
+        "cells_at_or_above_cutoff": 0
+      },
+      "1x2": {
+        "max_abs_walsh": 896,
+        "signed_walsh": 896,
+        "input_mask": "1000",
+        "output_mask": "1004",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x1": {
+        "max_abs_walsh": 996,
+        "signed_walsh": 996,
+        "input_mask": "2020",
+        "output_mask": "1000",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x2": {
+        "max_abs_walsh": 996,
+        "signed_walsh": -996,
+        "input_mask": "8020",
+        "output_mask": "4001",
+        "cells_at_or_above_cutoff": 0
+      }
+    },
+    "20261205": {
+      "1x1": {
+        "max_abs_walsh": 924,
+        "signed_walsh": 924,
+        "input_mask": "0010",
+        "output_mask": "0008",
+        "cells_at_or_above_cutoff": 0
+      },
+      "1x2": {
+        "max_abs_walsh": 900,
+        "signed_walsh": -900,
+        "input_mask": "0020",
+        "output_mask": "0202",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x1": {
+        "max_abs_walsh": 852,
+        "signed_walsh": 852,
+        "input_mask": "8200",
+        "output_mask": "8000",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x2": {
+        "max_abs_walsh": 1032,
+        "signed_walsh": -1032,
+        "input_mask": "3000",
+        "output_mask": "8020",
+        "cells_at_or_above_cutoff": 0
+      }
+    },
+    "20261206": {
+      "1x1": {
+        "max_abs_walsh": 772,
+        "signed_walsh": 772,
+        "input_mask": "0008",
+        "output_mask": "0001",
+        "cells_at_or_above_cutoff": 0
+      },
+      "1x2": {
+        "max_abs_walsh": 876,
+        "signed_walsh": 876,
+        "input_mask": "0800",
+        "output_mask": "0140",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x1": {
+        "max_abs_walsh": 924,
+        "signed_walsh": 924,
+        "input_mask": "0108",
+        "output_mask": "0004",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x2": {
+        "max_abs_walsh": 1200,
+        "signed_walsh": 1200,
+        "input_mask": "0101",
+        "output_mask": "4040",
+        "cells_at_or_above_cutoff": 0
+      }
+    },
+    "20261207": {
+      "1x1": {
+        "max_abs_walsh": 784,
+        "signed_walsh": -784,
+        "input_mask": "0002",
+        "output_mask": "0020",
+        "cells_at_or_above_cutoff": 0
+      },
+      "1x2": {
+        "max_abs_walsh": 1044,
+        "signed_walsh": 1044,
+        "input_mask": "0040",
+        "output_mask": "0018",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x1": {
+        "max_abs_walsh": 788,
+        "signed_walsh": 788,
+        "input_mask": "1001",
+        "output_mask": "4000",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x2": {
+        "max_abs_walsh": 1004,
+        "signed_walsh": 1004,
+        "input_mask": "4100",
+        "output_mask": "0c00",
+        "cells_at_or_above_cutoff": 0
+      }
+    },
+    "20261208": {
+      "1x1": {
+        "max_abs_walsh": 720,
+        "signed_walsh": 720,
+        "input_mask": "0800",
+        "output_mask": "0004",
+        "cells_at_or_above_cutoff": 0
+      },
+      "1x2": {
+        "max_abs_walsh": 936,
+        "signed_walsh": 936,
+        "input_mask": "0004",
+        "output_mask": "0210",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x1": {
+        "max_abs_walsh": 936,
+        "signed_walsh": -936,
+        "input_mask": "0408",
+        "output_mask": "0200",
+        "cells_at_or_above_cutoff": 0
+      },
+      "2x2": {
+        "max_abs_walsh": 1060,
+        "signed_walsh": 1060,
+        "input_mask": "6000",
+        "output_mask": "2400",
+        "cells_at_or_above_cutoff": 0
+      }
+    }
+  }
+}
