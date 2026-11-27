@@ -23,6 +23,7 @@ trap 'exit 130' INT
 trap 'exit 143' TERM
 
 start_hermes() {
+    : > "$work/endpoint"
     "$work/hermes" -port 0 -file "$work/messages.json" > "$work/endpoint" 2> "$work/hermes.log" &
     hermes_pid=$!
     for ((attempt = 0; attempt < 100; attempt++)); do
