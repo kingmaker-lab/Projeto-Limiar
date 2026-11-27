@@ -1,0 +1,3 @@
+transaction,account,debit_cents,credit_cents
+t,cash,125,0
+t,sales,0,125

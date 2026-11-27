@@ -30,3 +30,22 @@ Execuções realizadas em 26 e 27 de novembro de 2026, no Debian 13 x86-64. Os c
 | Athena | Um milhão de sorteios, p=0,4, semente 42 | 0,003531 s na medição da chamada via `@timed` |
 
 As medições são amostras individuais. Para reproduzir, use os comandos nos guias. Para os resultados do GitHub Actions, consulte o workflow no commit publicado.
+
+## Ferramentas 016–025
+
+As dez suítes passaram no Debian 13 x86-64. O Lua 5.4 foi extraído temporariamente de um pacote Debian e o Vigia usou Node.js 24. A matriz do GitHub Actions executa os testes e exemplos em Debian 13.
+
+| Projeto | Caso verificado |
+| --- | --- |
+| Prisma | Percentis e rejeição de pixels ausentes, fora da faixa ou excedentes. |
+| Kairos | Ótimo de 12 no exemplo e equivalência com busca exaustiva em 64 grafos de intervalos sintéticos. |
+| Órbita | Ordenação por ondas e rejeição de ciclos, dependências ausentes ou repetidas e chaves duplicadas. |
+| Balança | Conciliação em centavos por transação, com rejeição de débitos e créditos compensados apenas entre transações distintas. |
+| Viaduto | Rota A → C → B com custo 5, destino inalcançável e rejeição de custo negativo. |
+| Vigia | Faixa de p95, contagem de 5xx e rejeição de dados fora da faixa. |
+| Comporta | Isolamento por chave, espera de 234 ms e rejeição de retrocesso no relógio. |
+| Inventário | Manifestos iguais para árvores equivalentes, caminhos com quebras de linha e detecção de mudança no conteúdo. |
+| Esquema | Reaplicação sem alterações, detecção de histórico modificado e reversão completa de lote inválido. |
+| Sincronia | Escala mais deslocamento, normalização CRLF e rejeição de intervalos inválidos. |
+
+Nas cargas sintéticas dos guias, o Prisma processou um milhão de pixels em 0,092 s e o Kairos processou 100 mil trabalhos em 0,286 s. Tempos de relógio observados em uma execução de cada binário compilado com `-O2`. A geração das entradas e a compilação ficaram fora da medição.

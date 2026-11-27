@@ -1,6 +1,6 @@
 # Operação Polyglot
 
-Quinze aplicações independentes do Projeto Limiar, cada uma implementada e testada na sua linguagem. Os guias por projeto indicam os requisitos, o comando de execução e a suíte local. Instale só a ferramenta do projeto que for usar.
+Vinte e cinco aplicações independentes do Projeto Limiar, cada uma implementada e testada na sua linguagem. Os guias por projeto indicam os requisitos, o comando de execução e a suíte local. Instale só a ferramenta do projeto que for usar.
 
 | Projeto | Linguagem | Aplicação |
 | --- | --- | --- |
@@ -27,3 +27,18 @@ A [licença MIT](LICENSE) cobre os arquivos da operação.
 ## Experimento integrado
 
 O [roteiro de auditoria climática](experiments/climate-audit/) conecta Gaia, Hermes e Aegis. O teste verifica persistência após reinício e detecta uma alteração de um byte, mesmo quando os dados JSON continuam equivalentes.
+
+## Ferramentas 016–025
+
+| Projeto | Linguagem | Aplicação |
+| --- | --- | --- |
+| [016 · Prisma](016-prisma-c/) | C | Histograma e percentis de imagens PGM |
+| [017 · Kairos](017-kairos-cpp/) | C++ | Agendamento ótimo de intervalos ponderados |
+| [018 · Órbita](018-orbita-go/) | Go | Planejamento de dependências em ondas |
+| [019 · Balança](019-balanca-ruby/) | Ruby | Conciliação de partidas dobradas |
+| [020 · Viaduto](020-viaduto-java/) | Java | Rota de menor custo em grafo direcionado |
+| [021 · Vigia](021-vigia-js/) | JavaScript | Agregação de logs NDJSON e estimativa de p95 |
+| [022 · Comporta](022-comporta-lua/) | Lua | Simulação de token bucket por chave |
+| [023 · Inventário](023-inventario-bash/) | Bash | Manifesto SHA-256 reprodutível de diretórios |
+| [024 · Esquema](024-esquema-python/) | Python | Migrações SQLite atômicas com controle de histórico |
+| [025 · Sincronia](025-sincronia-perl/) | Perl | Correção de deslocamento e deriva em SRT |
