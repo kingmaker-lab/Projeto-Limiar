@@ -5,12 +5,21 @@ import json
 from pathlib import Path
 
 from controls import CONTROLS
+from hecate import inspect_evidence
 from telemetry.replay import summarize
 
 ROOT = Path(__file__).resolve().parent
 
 
 def run_experiment(experiment):
+    if experiment == "TAR-006":
+        directory = ROOT / "digital-forensics"
+        evidence = inspect_evidence(
+            (directory / "events.jsonl").read_bytes(),
+            (directory / "events.sha256").read_text(encoding="ascii").strip(),
+        )
+        return {"id": experiment, "passed": evidence["integrity_ok"], "evidence": evidence}
+
     if experiment == "TAR-008":
         with (ROOT / "telemetry/events.jsonl").open(encoding="utf-8") as sample:
             evidence = summarize(sample)
@@ -40,7 +49,7 @@ def run_experiment(experiment):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    experiments = (*CONTROLS, "TAR-008")
+    experiments = sorted((*CONTROLS, "TAR-006", "TAR-008"))
     parser.add_argument("experiment", nargs="?", default="all", choices=("all", *experiments))
     parser.add_argument("--list", action="store_true", help="listar experimentos executáveis")
     args = parser.parse_args()

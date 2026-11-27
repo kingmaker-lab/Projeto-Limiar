@@ -1,6 +1,6 @@
 # TARTARUS
 
-Laboratório defensivo offline do Projeto Limiar. Os experimentos usam código próprio, configurações revisáveis e dados sintéticos. Seis experimentos verificam controles locais e registram os resultados em JSON versionado.
+Laboratório defensivo offline do Projeto Limiar. Os experimentos usam código próprio, configurações revisáveis e dados sintéticos. Sete experimentos verificam controles locais e registram os resultados em JSON versionado.
 
 ## Executar no Debian
 
@@ -36,4 +36,4 @@ Use dados inventados nos ensaios, mantenha credenciais e registros reais fora do
 | TAR-007 Nemesis | [Código seguro](secure-coding/README.md) | Validar limites de entrada com testes de regressão. |
 | TAR-008 Hades | [Engenharia de detecção](detection-engineering/README.md) | Gerar um alerta para uma alteração rejeitada e nenhum para a alteração aceita. |
 
-Pandora, Hydra, Minotaur, Charon, Nemesis e Hades são executáveis. Medusa e Hecate seguem no roteiro de pesquisa. Consulte o [contrato dos eventos](telemetry/README.md) e o [registro de pesquisa e integrações](research/README.md).
+Pandora, Hydra, Minotaur, Charon, Hecate, Nemesis e Hades são executáveis. Medusa segue no roteiro de pesquisa. Consulte o [contrato dos eventos](telemetry/README.md) e o [registro de pesquisa e integrações](research/README.md).
