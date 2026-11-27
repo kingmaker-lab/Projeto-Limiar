@@ -1,0 +1,3 @@
+# Uma origem por linha.
+https://app.example.com
+https://api.example.com:8443
