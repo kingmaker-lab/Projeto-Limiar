@@ -52,21 +52,25 @@ def benchmark(subkeys):
             "median_ns_per_block": {n: median(samples) for n, samples in timings.items()}}
 
 
+def measure_prefixes(key, round_counts, cutoff):
+    table = array("H", range(SIZE))
+    prefixes = {}
+    last_round = max(round_counts)
+    for index, subkey in enumerate(extended_schedule(key)[:last_round], start=1):
+        advance(table, subkey)
+        if index in round_counts:
+            prefixes[str(index)] = summarize(table, cutoff)
+    if len(set(table)) != SIZE:
+        raise AssertionError("A variante deixou de ser uma permutação")
+    return prefixes
+
+
 def campaign():
     cutoff = next(2 * k for k in count(1)
                   if FAMILY_SIZE * overlap_upper_bound(SIZE, k) < ALPHA)
     cipher, controls = {}, {}
     for key in KEYS:
-        table = array("H", range(SIZE))
-        prefixes = {}
-        for index, subkey in enumerate(extended_schedule(key), start=1):
-            advance(table, subkey)
-            if index >= ROUNDS:
-                prefixes[str(index)] = summarize(table, cutoff)
-        if len(set(table)) != SIZE:
-            raise AssertionError("A variante deixou de ser uma permutação")
-        cipher[f"{key:08x}"] = prefixes
-        del table
+        cipher[f"{key:08x}"] = measure_prefixes(key, range(ROUNDS, EXTENDED_ROUNDS + 1), cutoff)
     for seed in CONTROL_SEEDS:
         table = array("H", range(SIZE))
         random.Random(seed).shuffle(table)
