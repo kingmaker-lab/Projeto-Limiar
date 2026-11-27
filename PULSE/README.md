@@ -42,3 +42,7 @@ Uma rodada Release registrou cinco amostras por modo, com 96 tarefas e 262.144 p
 O modo adaptativo fez três ajustes por amostra nessa rodada. Os tempos descrevem essa execução local e variam com a carga do ambiente.
 
 O roteiro Termux é preparatório. A execução em Android e ARM, o comportamento térmico e o desempenho sustentado em dispositivo seguem pendentes (GEN-001, GEN-006 e GEN-007).
+
+## Mobile Division
+
+[Superando as barreiras do hardware](../mobile/bug-bounty/superando-as-barreiras-do-hardware.md) apresenta um percurso de bug bounty para quem começa com um celular ou tablet.
