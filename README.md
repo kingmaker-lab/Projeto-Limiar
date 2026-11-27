@@ -14,6 +14,7 @@ O Limiar investiga o que arquiteturas compactas conseguem fazer sob restrições
 | **CERBERUS Fase II** · Resiliência de software | Como validar, ativar e restaurar configurações preservando a consistência do serviço? | [Serviço local, CLI, testes e modelos executáveis](cerberus/phase-ii/README.md) |
 | **OUROBOROS Fase II** · O Limiar da Serpente | Que propriedades uma rede de Feistel de 16 bits apresenta em condições experimentais controladas? | [Laboratório offline, dados sintéticos e roteiro de reprodução](ouroboros/phase2/README.md) |
 | **JANUS** · Beyond Language | Uma arquitetura compacta consegue representar significado, interpretar contexto e produzir inferências verificáveis sem depender de um LLM em execução? | [Protocolo, hipóteses e roadmap](janus/README.md) |
+| **TARTARUS** · Segurança defensiva | Como validar controles e detecções com evidências sintéticas em uma máquina de recursos limitados? | [Protocolo, trilhas e laboratório offline](tartarus/README.md) |
 
 ## JANUS · Beyond Language
 
