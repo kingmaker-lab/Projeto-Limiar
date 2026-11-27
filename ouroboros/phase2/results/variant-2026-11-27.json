@@ -1,0 +1,2157 @@
+{
+  "variant": "W16-K32-Feistel12-S4-P8-KS1E",
+  "domain_size": 65536,
+  "family_size": 20971200,
+  "alpha": 0.01,
+  "ordered_count_cutoff": 20,
+  "meets_criterion": true,
+  "feistel": {
+    "6a09e667": {
+      "8": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1361,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 3098,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 16163,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 56259,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 11589,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 1387,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 26360,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 4222,
+            "pairs": 5
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 337,
+            "pairs": 30
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 6462,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 2079,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 24657,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 4101,
+            "pairs": 11
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 6077,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 17527,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 18354,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 12,
+        "high_byte_input_max": 60,
+        "max_ordered_count": 60,
+        "crosses_threshold": true
+      },
+      "9": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 14759,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 16488,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 3346,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 50382,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 21395,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 4920,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 14482,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 58999,
+            "pairs": 7
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 28263,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 10299,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 4159,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 39384,
+            "pairs": 7
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 59453,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 2325,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 11179,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 5987,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 14,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "10": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 28505,
+            "pairs": 7
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 30709,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 6135,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 9564,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 52847,
+            "pairs": 7
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 36243,
+            "pairs": 7
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 26708,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 8423,
+            "pairs": 5
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 316,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 3701,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 58646,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 37377,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 18580,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 42126,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 219,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 9806,
+            "pairs": 5
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 12,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "11": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 9323,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 10724,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 5275,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 6402,
+            "pairs": 7
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4512,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 6278,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 6574,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 1769,
+            "pairs": 5
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 2941,
+            "pairs": 5
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 16994,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 5560,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 11815,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 29691,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 3156,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 55,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 3294,
+            "pairs": 5
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 12,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "12": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 2599,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 10787,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 6700,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 52326,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 16496,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 332,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 11649,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 25754,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 3251,
+            "pairs": 5
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 1369,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 25897,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 13244,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 1139,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 10883,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 56337,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 8107,
+            "pairs": 5
+          }
+        ],
+        "low_byte_input_max": 12,
+        "high_byte_input_max": 12,
+        "max_ordered_count": 12,
+        "crosses_threshold": false
+      }
+    },
+    "bb67ae85": {
+      "8": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1361,
+            "pairs": 8
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 53162,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 4844,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 49424,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 6022,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 979,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 4003,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 48991,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 7,
+            "pairs": 12
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 1800,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 8262,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 51968,
+            "pairs": 7
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 334,
+            "pairs": 15
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 4399,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 837,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 9099,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 16,
+        "high_byte_input_max": 30,
+        "max_ordered_count": 30,
+        "crosses_threshold": true
+      },
+      "9": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 29843,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 1035,
+            "pairs": 7
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 53240,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 32619,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 24772,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 11239,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 18691,
+            "pairs": 7
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 8196,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1812,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 6385,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 7131,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 203,
+            "pairs": 7
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 5380,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 63758,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 8165,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 32384,
+            "pairs": 7
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 14,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "10": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 3285,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 11005,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 16470,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 8811,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3142,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 59998,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 18939,
+            "pairs": 7
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 5926,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 32150,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 13875,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 8130,
+            "pairs": 7
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 21364,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 14695,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 50063,
+            "pairs": 7
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 44284,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 47954,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 14,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "11": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 16012,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 22480,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 5553,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 7407,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 58938,
+            "pairs": 7
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 1297,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 4530,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 63299,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 6116,
+            "pairs": 5
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 11141,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 23217,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 30744,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 32101,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 104,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 60883,
+            "pairs": 7
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 24083,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 14,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "12": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 4407,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 7291,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 9049,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 11470,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 19296,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 14768,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 28264,
+            "pairs": 7
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 30550,
+            "pairs": 7
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 18327,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 105,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 10318,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 12646,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 10913,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 1115,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 43769,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 3623,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 12,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      }
+    },
+    "3c6ef372": {
+      "8": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1297,
+            "pairs": 7
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 354,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 63,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 63344,
+            "pairs": 7
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 46457,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 2108,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 736,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 12582,
+            "pairs": 5
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 15,
+            "pairs": 9
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 64162,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 357,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 13750,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 334,
+            "pairs": 14
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 13899,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 7880,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 31924,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 28,
+        "max_ordered_count": 28,
+        "crosses_threshold": true
+      },
+      "9": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 57240,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 2457,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 25630,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 13464,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 14893,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 56698,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 30495,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 44438,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1674,
+            "pairs": 5
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 46080,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 16056,
+            "pairs": 8
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 9757,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 64287,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 228,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 2594,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 581,
+            "pairs": 5
+          }
+        ],
+        "low_byte_input_max": 12,
+        "high_byte_input_max": 16,
+        "max_ordered_count": 16,
+        "crosses_threshold": false
+      },
+      "10": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 26543,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 33203,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 2538,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 5885,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 1994,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 52147,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 52962,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 5696,
+            "pairs": 5
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 20028,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 63268,
+            "pairs": 7
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 20851,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 5107,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 34126,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 44674,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 9325,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 11682,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 12,
+        "high_byte_input_max": 14,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "11": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1242,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 16107,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1219,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 10255,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 61671,
+            "pairs": 7
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 1037,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 9173,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 16758,
+            "pairs": 5
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 26971,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 4326,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 4639,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 5019,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 652,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 5184,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 15355,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 57491,
+            "pairs": 7
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 14,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "12": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 34281,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 4720,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 9412,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 50894,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 8568,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 2286,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 60805,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 14899,
+            "pairs": 7
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 3434,
+            "pairs": 5
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 14102,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 5015,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 52918,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 5682,
+            "pairs": 7
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 36908,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 28354,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 13303,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 14,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      }
+    },
+    "a54ff53a": {
+      "8": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 3063,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 35706,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 3028,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 1894,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 1344,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 29833,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 4258,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 34183,
+            "pairs": 7
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 261,
+            "pairs": 27
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 48904,
+            "pairs": 7
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 56918,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 6827,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 350,
+            "pairs": 12
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 24117,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 6436,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 3119,
+            "pairs": 5
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 54,
+        "max_ordered_count": 54,
+        "crosses_threshold": true
+      },
+      "9": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 25440,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 2732,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 42264,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 28706,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 42914,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 1118,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 881,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 4217,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1349,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 815,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1010,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 3652,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 2402,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 49222,
+            "pairs": 7
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 4076,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 730,
+            "pairs": 5
+          }
+        ],
+        "low_byte_input_max": 12,
+        "high_byte_input_max": 14,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "10": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 56995,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 4946,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 12059,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 32770,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 7067,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 6402,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 491,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 17500,
+            "pairs": 5
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 17250,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 3671,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 6134,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 8094,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 5172,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 43577,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 35169,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 7345,
+            "pairs": 5
+          }
+        ],
+        "low_byte_input_max": 12,
+        "high_byte_input_max": 12,
+        "max_ordered_count": 12,
+        "crosses_threshold": false
+      },
+      "11": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 9302,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 1574,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 8335,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 56093,
+            "pairs": 7
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4617,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 17864,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 2815,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 3649,
+            "pairs": 5
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 17591,
+            "pairs": 6
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 1554,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 9665,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 20221,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 4064,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 7688,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 63551,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 1291,
+            "pairs": 5
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 12,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      },
+      "12": {
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 15531,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 34161,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 12904,
+            "pairs": 7
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 47446,
+            "pairs": 7
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3631,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 10020,
+            "pairs": 7
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 29295,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 33099,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 143,
+            "pairs": 5
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 31151,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 5384,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 223,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 3476,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 48851,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 10825,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 38726,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 12,
+        "max_ordered_count": 14,
+        "crosses_threshold": false
+      }
+    }
+  },
+  "controls": {
+    "20261131": {
+      "rows": [
+        {
+          "input_difference": 1,
+          "output_difference": 8123,
+          "pairs": 7
+        },
+        {
+          "input_difference": 2,
+          "output_difference": 6411,
+          "pairs": 5
+        },
+        {
+          "input_difference": 4,
+          "output_difference": 59372,
+          "pairs": 6
+        },
+        {
+          "input_difference": 8,
+          "output_difference": 32888,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16,
+          "output_difference": 2873,
+          "pairs": 5
+        },
+        {
+          "input_difference": 32,
+          "output_difference": 10772,
+          "pairs": 6
+        },
+        {
+          "input_difference": 64,
+          "output_difference": 17795,
+          "pairs": 6
+        },
+        {
+          "input_difference": 128,
+          "output_difference": 23771,
+          "pairs": 6
+        },
+        {
+          "input_difference": 256,
+          "output_difference": 385,
+          "pairs": 6
+        },
+        {
+          "input_difference": 512,
+          "output_difference": 2509,
+          "pairs": 5
+        },
+        {
+          "input_difference": 1024,
+          "output_difference": 4391,
+          "pairs": 5
+        },
+        {
+          "input_difference": 2048,
+          "output_difference": 15526,
+          "pairs": 6
+        },
+        {
+          "input_difference": 4096,
+          "output_difference": 9010,
+          "pairs": 5
+        },
+        {
+          "input_difference": 8192,
+          "output_difference": 3015,
+          "pairs": 5
+        },
+        {
+          "input_difference": 16384,
+          "output_difference": 7453,
+          "pairs": 5
+        },
+        {
+          "input_difference": 32768,
+          "output_difference": 7688,
+          "pairs": 5
+        }
+      ],
+      "low_byte_input_max": 14,
+      "high_byte_input_max": 12,
+      "max_ordered_count": 14,
+      "crosses_threshold": false
+    },
+    "20261132": {
+      "rows": [
+        {
+          "input_difference": 1,
+          "output_difference": 13346,
+          "pairs": 6
+        },
+        {
+          "input_difference": 2,
+          "output_difference": 8719,
+          "pairs": 6
+        },
+        {
+          "input_difference": 4,
+          "output_difference": 18032,
+          "pairs": 5
+        },
+        {
+          "input_difference": 8,
+          "output_difference": 3535,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16,
+          "output_difference": 24934,
+          "pairs": 6
+        },
+        {
+          "input_difference": 32,
+          "output_difference": 35995,
+          "pairs": 6
+        },
+        {
+          "input_difference": 64,
+          "output_difference": 1385,
+          "pairs": 5
+        },
+        {
+          "input_difference": 128,
+          "output_difference": 36098,
+          "pairs": 6
+        },
+        {
+          "input_difference": 256,
+          "output_difference": 144,
+          "pairs": 6
+        },
+        {
+          "input_difference": 512,
+          "output_difference": 22939,
+          "pairs": 6
+        },
+        {
+          "input_difference": 1024,
+          "output_difference": 24189,
+          "pairs": 6
+        },
+        {
+          "input_difference": 2048,
+          "output_difference": 166,
+          "pairs": 5
+        },
+        {
+          "input_difference": 4096,
+          "output_difference": 11899,
+          "pairs": 5
+        },
+        {
+          "input_difference": 8192,
+          "output_difference": 2812,
+          "pairs": 5
+        },
+        {
+          "input_difference": 16384,
+          "output_difference": 2243,
+          "pairs": 5
+        },
+        {
+          "input_difference": 32768,
+          "output_difference": 1077,
+          "pairs": 5
+        }
+      ],
+      "low_byte_input_max": 12,
+      "high_byte_input_max": 12,
+      "max_ordered_count": 12,
+      "crosses_threshold": false
+    },
+    "20261133": {
+      "rows": [
+        {
+          "input_difference": 1,
+          "output_difference": 1734,
+          "pairs": 5
+        },
+        {
+          "input_difference": 2,
+          "output_difference": 5582,
+          "pairs": 5
+        },
+        {
+          "input_difference": 4,
+          "output_difference": 62312,
+          "pairs": 6
+        },
+        {
+          "input_difference": 8,
+          "output_difference": 17703,
+          "pairs": 5
+        },
+        {
+          "input_difference": 16,
+          "output_difference": 6212,
+          "pairs": 5
+        },
+        {
+          "input_difference": 32,
+          "output_difference": 44446,
+          "pairs": 6
+        },
+        {
+          "input_difference": 64,
+          "output_difference": 7048,
+          "pairs": 7
+        },
+        {
+          "input_difference": 128,
+          "output_difference": 35435,
+          "pairs": 6
+        },
+        {
+          "input_difference": 256,
+          "output_difference": 4077,
+          "pairs": 5
+        },
+        {
+          "input_difference": 512,
+          "output_difference": 22889,
+          "pairs": 6
+        },
+        {
+          "input_difference": 1024,
+          "output_difference": 47141,
+          "pairs": 6
+        },
+        {
+          "input_difference": 2048,
+          "output_difference": 24598,
+          "pairs": 6
+        },
+        {
+          "input_difference": 4096,
+          "output_difference": 3708,
+          "pairs": 5
+        },
+        {
+          "input_difference": 8192,
+          "output_difference": 5675,
+          "pairs": 5
+        },
+        {
+          "input_difference": 16384,
+          "output_difference": 15973,
+          "pairs": 5
+        },
+        {
+          "input_difference": 32768,
+          "output_difference": 6249,
+          "pairs": 5
+        }
+      ],
+      "low_byte_input_max": 14,
+      "high_byte_input_max": 12,
+      "max_ordered_count": 14,
+      "crosses_threshold": false
+    },
+    "20261134": {
+      "rows": [
+        {
+          "input_difference": 1,
+          "output_difference": 7657,
+          "pairs": 5
+        },
+        {
+          "input_difference": 2,
+          "output_difference": 752,
+          "pairs": 5
+        },
+        {
+          "input_difference": 4,
+          "output_difference": 5730,
+          "pairs": 5
+        },
+        {
+          "input_difference": 8,
+          "output_difference": 31978,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16,
+          "output_difference": 50648,
+          "pairs": 6
+        },
+        {
+          "input_difference": 32,
+          "output_difference": 22502,
+          "pairs": 6
+        },
+        {
+          "input_difference": 64,
+          "output_difference": 1482,
+          "pairs": 5
+        },
+        {
+          "input_difference": 128,
+          "output_difference": 4589,
+          "pairs": 5
+        },
+        {
+          "input_difference": 256,
+          "output_difference": 16715,
+          "pairs": 6
+        },
+        {
+          "input_difference": 512,
+          "output_difference": 164,
+          "pairs": 6
+        },
+        {
+          "input_difference": 1024,
+          "output_difference": 52750,
+          "pairs": 6
+        },
+        {
+          "input_difference": 2048,
+          "output_difference": 1897,
+          "pairs": 5
+        },
+        {
+          "input_difference": 4096,
+          "output_difference": 6798,
+          "pairs": 6
+        },
+        {
+          "input_difference": 8192,
+          "output_difference": 55288,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16384,
+          "output_difference": 23530,
+          "pairs": 6
+        },
+        {
+          "input_difference": 32768,
+          "output_difference": 11313,
+          "pairs": 5
+        }
+      ],
+      "low_byte_input_max": 12,
+      "high_byte_input_max": 12,
+      "max_ordered_count": 12,
+      "crosses_threshold": false
+    }
+  },
+  "benchmark": {
+    "python": "3.13.5",
+    "platform": "Linux-6.12.117+deb13-amd64-x86_64-with-glibc2.41",
+    "blocks_per_repeat": 4096,
+    "ns_per_block": {
+      "8": [
+        511.9597167868584,
+        595.8806152395191,
+        610.5986328219792,
+        631.3378905775658,
+        665.8015136995488
+      ],
+      "12": [
+        1290.1308593660233,
+        847.4643554690076,
+        731.6879882535154,
+        1222.8491210741765,
+        809.5991211320985
+      ]
+    },
+    "median_ns_per_block": {
+      "8": 610.5986328219792,
+      "12": 847.4643554690076
+    }
+  }
+}
