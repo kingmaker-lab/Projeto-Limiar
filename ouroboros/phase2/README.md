@@ -11,6 +11,7 @@ Laboratório offline para a rede de Feistel sintética do EXP-008. Uso exclusivo
 - [Comparação diferencial com o sufixo Feistel](SUFIXO.md)
 - [Comparação da referência com a variante de até 12 rodadas](VARIANTE.md)
 - [Confirmação diferencial das nove rodadas](CONFIRMACAO.md)
+- [Comparação linear das configurações de 8, 9 e 12 rodadas](LINEAR.md)
 
 Na raiz do projeto, com Python 3.11+ e biblioteca padrão:
 
