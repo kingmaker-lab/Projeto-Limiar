@@ -1,0 +1,5 @@
+https://APP.example.com:443/perfil?token=exemplo#conta
+https://app.example.com/ajuda
+https://api.example.com:8443/docs
+http://app.example.com/
+https://cdn.app.example.com/
