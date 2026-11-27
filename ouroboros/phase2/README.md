@@ -13,6 +13,7 @@ Laboratório offline para a rede de Feistel sintética do EXP-008. Uso exclusivo
 - [Confirmação diferencial das nove rodadas](CONFIRMACAO.md)
 - [Comparação linear das configurações de 8, 9 e 12 rodadas](LINEAR.md)
 - [Ensaio linear com máscaras de até dois bits](LINEAR_PESO2.md)
+- [Ensaio diferencial com diferenças de dois bits](DIFERENCIAL_PESO2.md)
 
 Na raiz do projeto, com Python 3.11+ e biblioteca padrão:
 

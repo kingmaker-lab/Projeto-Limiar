@@ -23,8 +23,9 @@ def overlap_upper_bound(size, pairs):
 
 
 def histogram(table, delta):
+    pivot = delta & -delta
     return Counter(value ^ table[index ^ delta]
-                   for index, value in enumerate(table) if not index & delta)
+                   for index, value in enumerate(table) if not index & pivot)
 
 
 def row_maxima(table, differences):

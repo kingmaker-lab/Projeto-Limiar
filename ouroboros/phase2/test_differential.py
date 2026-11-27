@@ -19,3 +19,13 @@ class DifferentialTests(unittest.TestCase):
             observed = Fraction(sum(count >= threshold for count in counts), len(counts))
             self.assertLessEqual(observed, overlap_upper_bound(6, threshold))
         self.assertEqual(overlap_upper_bound(6, 3), Fraction(1, 15))
+
+    def test_two_bit_difference_counts_both_pair_classes(self):
+        from collections import Counter
+        from .differential import histogram
+
+        table = (1, 2, 0, 4, 6, 3, 5, 7)
+        for delta in (3, 5, 6):
+            ordered = Counter(table[i] ^ table[i ^ delta] for i in range(len(table)))
+            actual = histogram(table, delta)
+            self.assertEqual({value: 2 * count for value, count in actual.items()}, ordered)
