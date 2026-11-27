@@ -1,0 +1,3218 @@
+{
+  "domain_size": 65536,
+  "family_size": 33553920,
+  "alpha": 0.01,
+  "ordered_count_cutoff": 20,
+  "feistel": {
+    "13579bdf": [
+      {
+        "rounds": 1,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 261,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 529,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1041,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 2117,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4106,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 8226,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 16418,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 32906,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 2,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 4,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 8,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 16,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 32,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 64,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 128,
+            "pairs": 32768
+          }
+        ],
+        "low_byte_input_max": 16384,
+        "high_byte_input_max": 65536,
+        "max_ordered_count": 65536,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 2,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1361,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 1362,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 20644,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 1368,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 2561,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 2609,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 41058,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 2705,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 261,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 529,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1041,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 2117,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 4106,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 8226,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 16418,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 32906,
+            "pairs": 8192
+          }
+        ],
+        "low_byte_input_max": 4096,
+        "high_byte_input_max": 16384,
+        "max_ordered_count": 16384,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 3,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 5,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 80,
+            "pairs": 512
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1541,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 2305,
+            "pairs": 128
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 271,
+            "pairs": 512
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 689,
+            "pairs": 256
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 18631,
+            "pairs": 128
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 49154,
+            "pairs": 128
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1361,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 1362,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 20644,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 1368,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 2561,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 2609,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 41058,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 2705,
+            "pairs": 1024
+          }
+        ],
+        "low_byte_input_max": 2048,
+        "high_byte_input_max": 4096,
+        "max_ordered_count": 4096,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 4,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1360,
+            "pairs": 256
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 20640,
+            "pairs": 128
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 4108,
+            "pairs": 64
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 344,
+            "pairs": 64
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3840,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 625,
+            "pairs": 64
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 2181,
+            "pairs": 32
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 721,
+            "pairs": 64
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 5,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 80,
+            "pairs": 512
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1536,
+            "pairs": 128
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 2305,
+            "pairs": 128
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 271,
+            "pairs": 512
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 689,
+            "pairs": 256
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 49282,
+            "pairs": 256
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 49154,
+            "pairs": 128
+          }
+        ],
+        "low_byte_input_max": 512,
+        "high_byte_input_max": 2048,
+        "max_ordered_count": 2048,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 5,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 256,
+            "pairs": 80
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 41074,
+            "pairs": 45
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 337,
+            "pairs": 16
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 20546,
+            "pairs": 9
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 15,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 240,
+            "pairs": 40
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 129,
+            "pairs": 18
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 36994,
+            "pairs": 10
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1360,
+            "pairs": 256
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 20640,
+            "pairs": 128
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 6,
+            "pairs": 128
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 268,
+            "pairs": 64
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 3840,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 61440,
+            "pairs": 40
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 7040,
+            "pairs": 20
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 644,
+            "pairs": 32
+          }
+        ],
+        "low_byte_input_max": 256,
+        "high_byte_input_max": 512,
+        "max_ordered_count": 512,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 6,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1,
+            "pairs": 80
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 2,
+            "pairs": 20
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 349,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 3167,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3841,
+            "pairs": 35
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 61608,
+            "pairs": 18
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 389,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 6,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 340,
+            "pairs": 78
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 41074,
+            "pairs": 36
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1605,
+            "pairs": 32
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 3088,
+            "pairs": 16
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 15,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 240,
+            "pairs": 40
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 24,
+            "pairs": 8
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 129,
+            "pairs": 8
+          }
+        ],
+        "low_byte_input_max": 160,
+        "high_byte_input_max": 256,
+        "max_ordered_count": 256,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 7,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 321,
+            "pairs": 25
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 529,
+            "pairs": 7
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 2579,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 40342,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4133,
+            "pairs": 16
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 12328,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 14699,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 62108,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 4107,
+            "pairs": 16
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 279,
+            "pairs": 7
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 20484,
+            "pairs": 9
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 80,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 3924,
+            "pairs": 48
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 61472,
+            "pairs": 13
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 12488,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 6,
+            "pairs": 8
+          }
+        ],
+        "low_byte_input_max": 50,
+        "high_byte_input_max": 96,
+        "max_ordered_count": 96,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 8,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1361,
+            "pairs": 9
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 58914,
+            "pairs": 7
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 4198,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 467,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 2576,
+            "pairs": 9
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 58534,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 8550,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 31577,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 7,
+            "pairs": 9
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 26601,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1089,
+            "pairs": 9
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 5764,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 334,
+            "pairs": 14
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 1108,
+            "pairs": 7
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 5185,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 32412,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 18,
+        "high_byte_input_max": 28,
+        "max_ordered_count": 28,
+        "crosses_threshold": true
+      }
+    ],
+    "2468ace0": [
+      {
+        "rounds": 1,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 261,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 529,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1041,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 2117,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4106,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 8226,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 16418,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 32906,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 2,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 4,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 8,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 16,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 32,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 64,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 128,
+            "pairs": 32768
+          }
+        ],
+        "low_byte_input_max": 16384,
+        "high_byte_input_max": 65536,
+        "max_ordered_count": 65536,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 2,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1361,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 1362,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 20644,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 1368,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 2561,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 2609,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 41058,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 2705,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 261,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 529,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1041,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 2117,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 4106,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 8226,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 16418,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 32906,
+            "pairs": 8192
+          }
+        ],
+        "low_byte_input_max": 4096,
+        "high_byte_input_max": 16384,
+        "max_ordered_count": 16384,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 3,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 5,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 80,
+            "pairs": 512
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1536,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 2325,
+            "pairs": 128
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 271,
+            "pairs": 512
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 689,
+            "pairs": 256
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 18631,
+            "pairs": 128
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 49154,
+            "pairs": 128
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1361,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 1362,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 20644,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 1368,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 2561,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 2609,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 41058,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 2705,
+            "pairs": 1024
+          }
+        ],
+        "low_byte_input_max": 2048,
+        "high_byte_input_max": 4096,
+        "max_ordered_count": 4096,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 4,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1360,
+            "pairs": 256
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 3,
+            "pairs": 128
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 6,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 3,
+            "pairs": 32
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3840,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 45507,
+            "pairs": 44
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 2181,
+            "pairs": 32
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 80,
+            "pairs": 32
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 5,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 80,
+            "pairs": 512
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1536,
+            "pairs": 128
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 2325,
+            "pairs": 128
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 271,
+            "pairs": 512
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 689,
+            "pairs": 256
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 18631,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 49184,
+            "pairs": 128
+          }
+        ],
+        "low_byte_input_max": 512,
+        "high_byte_input_max": 2048,
+        "max_ordered_count": 2048,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 5,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 256,
+            "pairs": 84
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 788,
+            "pairs": 36
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1605,
+            "pairs": 32
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 4146,
+            "pairs": 12
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 15,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 240,
+            "pairs": 40
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 18503,
+            "pairs": 9
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 16690,
+            "pairs": 9
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1360,
+            "pairs": 256
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 3,
+            "pairs": 128
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 6,
+            "pairs": 128
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 3,
+            "pairs": 32
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 3840,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 61608,
+            "pairs": 40
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 2181,
+            "pairs": 32
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 80,
+            "pairs": 32
+          }
+        ],
+        "low_byte_input_max": 256,
+        "high_byte_input_max": 512,
+        "max_ordered_count": 512,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 6,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1,
+            "pairs": 84
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 262,
+            "pairs": 11
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 20646,
+            "pairs": 8
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 152,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3856,
+            "pairs": 46
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 61472,
+            "pairs": 15
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 24231,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 56745,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 340,
+            "pairs": 80
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 8306,
+            "pairs": 38
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1605,
+            "pairs": 32
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 117,
+            "pairs": 15
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 15,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 240,
+            "pairs": 24
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 16398,
+            "pairs": 9
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 32872,
+            "pairs": 11
+          }
+        ],
+        "low_byte_input_max": 168,
+        "high_byte_input_max": 256,
+        "max_ordered_count": 256,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 7,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 321,
+            "pairs": 24
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 4922,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 58530,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 2777,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4237,
+            "pairs": 13
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 8312,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 7814,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 1509,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 4227,
+            "pairs": 15
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 53416,
+            "pairs": 15
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 16420,
+            "pairs": 7
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 80,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 3924,
+            "pairs": 44
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 61608,
+            "pairs": 8
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 23707,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 23918,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 48,
+        "high_byte_input_max": 88,
+        "max_ordered_count": 88,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 8,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1344,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 2974,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 33614,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 9789,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 55605,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 40480,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 49501,
+            "pairs": 7
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 4022,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 15,
+            "pairs": 13
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 32678,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1998,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 4049,
+            "pairs": 5
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 266,
+            "pairs": 10
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 932,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 33322,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 51094,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 14,
+        "high_byte_input_max": 26,
+        "max_ordered_count": 26,
+        "crosses_threshold": true
+      }
+    ],
+    "31415926": [
+      {
+        "rounds": 1,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 261,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 529,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1041,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 2117,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4106,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 8226,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 16418,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 32906,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 2,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 4,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 8,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 16,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 32,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 64,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 128,
+            "pairs": 32768
+          }
+        ],
+        "low_byte_input_max": 16384,
+        "high_byte_input_max": 65536,
+        "max_ordered_count": 65536,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 2,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1361,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 1362,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 20644,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 1368,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 2561,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 2609,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 41058,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 2705,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 261,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 529,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1041,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 2117,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 4106,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 8226,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 16418,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 32906,
+            "pairs": 8192
+          }
+        ],
+        "low_byte_input_max": 4096,
+        "high_byte_input_max": 16384,
+        "max_ordered_count": 16384,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 3,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 5,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 80,
+            "pairs": 512
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1536,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 2325,
+            "pairs": 128
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 271,
+            "pairs": 512
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 689,
+            "pairs": 256
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 18631,
+            "pairs": 128
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 49154,
+            "pairs": 128
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1361,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 1362,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 20644,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 1368,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 2561,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 2609,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 41058,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 2705,
+            "pairs": 1024
+          }
+        ],
+        "low_byte_input_max": 2048,
+        "high_byte_input_max": 4096,
+        "max_ordered_count": 4096,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 4,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1360,
+            "pairs": 256
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 3,
+            "pairs": 128
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 6,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 3,
+            "pairs": 32
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3840,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 45523,
+            "pairs": 40
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 2181,
+            "pairs": 32
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 644,
+            "pairs": 32
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 5,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 80,
+            "pairs": 512
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1541,
+            "pairs": 128
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 2325,
+            "pairs": 128
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 271,
+            "pairs": 512
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 689,
+            "pairs": 256
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 49282,
+            "pairs": 256
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 49184,
+            "pairs": 128
+          }
+        ],
+        "low_byte_input_max": 512,
+        "high_byte_input_max": 2048,
+        "max_ordered_count": 2048,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 5,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 340,
+            "pairs": 80
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 41074,
+            "pairs": 31
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1605,
+            "pairs": 32
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 32906,
+            "pairs": 12
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 15,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 240,
+            "pairs": 24
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 320,
+            "pairs": 8
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 53263,
+            "pairs": 11
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1360,
+            "pairs": 256
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 3,
+            "pairs": 128
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 4108,
+            "pairs": 64
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 3,
+            "pairs": 32
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 3840,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 61440,
+            "pairs": 40
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 4714,
+            "pairs": 20
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 8418,
+            "pairs": 32
+          }
+        ],
+        "low_byte_input_max": 256,
+        "high_byte_input_max": 512,
+        "max_ordered_count": 512,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 6,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 529,
+            "pairs": 18
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 53416,
+            "pairs": 12
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 20646,
+            "pairs": 8
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 33018,
+            "pairs": 7
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3856,
+            "pairs": 38
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 61610,
+            "pairs": 9
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 1472,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 36149,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 340,
+            "pairs": 86
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 788,
+            "pairs": 32
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 24,
+            "pairs": 16
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 101,
+            "pairs": 18
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 15,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 240,
+            "pairs": 40
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 263,
+            "pairs": 8
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 1504,
+            "pairs": 10
+          }
+        ],
+        "low_byte_input_max": 76,
+        "high_byte_input_max": 256,
+        "max_ordered_count": 256,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 7,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 7,
+            "pairs": 10
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 5010,
+            "pairs": 7
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 716,
+            "pairs": 5
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 32773,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4133,
+            "pairs": 12
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 24471,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 7352,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 6029,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 3840,
+            "pairs": 14
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 262,
+            "pairs": 9
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 31623,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 262,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 3925,
+            "pairs": 36
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 61472,
+            "pairs": 12
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 1749,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 41169,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 24,
+        "high_byte_input_max": 72,
+        "max_ordered_count": 72,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 8,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1793,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 11092,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 29486,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 20715,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 12695,
+            "pairs": 6
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 362,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 31857,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 28576,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 15,
+            "pairs": 14
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 39634,
+            "pairs": 6
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1499,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 49731,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 282,
+            "pairs": 11
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 37556,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 2715,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 16827,
+            "pairs": 5
+          }
+        ],
+        "low_byte_input_max": 12,
+        "high_byte_input_max": 28,
+        "max_ordered_count": 28,
+        "crosses_threshold": true
+      }
+    ],
+    "27182818": [
+      {
+        "rounds": 1,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 261,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 529,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1041,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 2117,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4106,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 8226,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 16418,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 32906,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 2,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 4,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 8,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 16,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 32,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 64,
+            "pairs": 32768
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 128,
+            "pairs": 32768
+          }
+        ],
+        "low_byte_input_max": 16384,
+        "high_byte_input_max": 65536,
+        "max_ordered_count": 65536,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 2,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1361,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 1362,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 20644,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 1368,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 2561,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 2609,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 41058,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 2705,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 261,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 529,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1041,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 2117,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 4106,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 8226,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 16418,
+            "pairs": 8192
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 32906,
+            "pairs": 8192
+          }
+        ],
+        "low_byte_input_max": 4096,
+        "high_byte_input_max": 16384,
+        "max_ordered_count": 16384,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 3,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 5,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 80,
+            "pairs": 512
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1536,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 2305,
+            "pairs": 128
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 271,
+            "pairs": 512
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 689,
+            "pairs": 256
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 49160,
+            "pairs": 128
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 49184,
+            "pairs": 128
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1361,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 1362,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 20644,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 1368,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 2561,
+            "pairs": 2048
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 2609,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 41058,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 2705,
+            "pairs": 1024
+          }
+        ],
+        "low_byte_input_max": 2048,
+        "high_byte_input_max": 4096,
+        "max_ordered_count": 4096,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 4,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1360,
+            "pairs": 256
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 20640,
+            "pairs": 128
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 6,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 344,
+            "pairs": 64
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3840,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 45507,
+            "pairs": 45
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 2181,
+            "pairs": 32
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 8418,
+            "pairs": 32
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 5,
+            "pairs": 1024
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 80,
+            "pairs": 512
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 1541,
+            "pairs": 128
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 2325,
+            "pairs": 128
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 271,
+            "pairs": 512
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 689,
+            "pairs": 256
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 49160,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 49184,
+            "pairs": 128
+          }
+        ],
+        "low_byte_input_max": 512,
+        "high_byte_input_max": 2048,
+        "max_ordered_count": 2048,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 5,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 20645,
+            "pairs": 61
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 577,
+            "pairs": 40
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 1605,
+            "pairs": 32
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 4114,
+            "pairs": 10
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 15,
+            "pairs": 128
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 240,
+            "pairs": 40
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 61499,
+            "pairs": 9
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 129,
+            "pairs": 10
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1360,
+            "pairs": 256
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 3,
+            "pairs": 128
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 4260,
+            "pairs": 64
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 3,
+            "pairs": 32
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 3840,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 45537,
+            "pairs": 40
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 8418,
+            "pairs": 64
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 80,
+            "pairs": 32
+          }
+        ],
+        "low_byte_input_max": 256,
+        "high_byte_input_max": 512,
+        "max_ordered_count": 512,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 6,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 1793,
+            "pairs": 14
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 2,
+            "pairs": 20
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 16558,
+            "pairs": 9
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 79,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 3856,
+            "pairs": 40
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 61608,
+            "pairs": 16
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 12931,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 20296,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 20645,
+            "pairs": 72
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 1,
+            "pairs": 32
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 42019,
+            "pairs": 10
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 788,
+            "pairs": 15
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 15,
+            "pairs": 128
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 240,
+            "pairs": 40
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 33,
+            "pairs": 12
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 4069,
+            "pairs": 9
+          }
+        ],
+        "low_byte_input_max": 80,
+        "high_byte_input_max": 256,
+        "max_ordered_count": 256,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 7,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 15,
+            "pairs": 12
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 529,
+            "pairs": 9
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 16255,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 17407,
+            "pairs": 5
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 4133,
+            "pairs": 13
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 39574,
+            "pairs": 6
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 4215,
+            "pairs": 5
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 13183,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 1,
+            "pairs": 48
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 277,
+            "pairs": 11
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 82,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 16498,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 3924,
+            "pairs": 51
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 61472,
+            "pairs": 18
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 7,
+            "pairs": 8
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 31273,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 26,
+        "high_byte_input_max": 102,
+        "max_ordered_count": 102,
+        "crosses_threshold": true
+      },
+      {
+        "rounds": 8,
+        "rows": [
+          {
+            "input_difference": 1,
+            "output_difference": 3841,
+            "pairs": 5
+          },
+          {
+            "input_difference": 2,
+            "output_difference": 38533,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4,
+            "output_difference": 39002,
+            "pairs": 6
+          },
+          {
+            "input_difference": 8,
+            "output_difference": 29057,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16,
+            "output_difference": 6898,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32,
+            "output_difference": 8886,
+            "pairs": 5
+          },
+          {
+            "input_difference": 64,
+            "output_difference": 37744,
+            "pairs": 6
+          },
+          {
+            "input_difference": 128,
+            "output_difference": 47243,
+            "pairs": 6
+          },
+          {
+            "input_difference": 256,
+            "output_difference": 337,
+            "pairs": 16
+          },
+          {
+            "input_difference": 512,
+            "output_difference": 529,
+            "pairs": 5
+          },
+          {
+            "input_difference": 1024,
+            "output_difference": 25498,
+            "pairs": 6
+          },
+          {
+            "input_difference": 2048,
+            "output_difference": 50460,
+            "pairs": 6
+          },
+          {
+            "input_difference": 4096,
+            "output_difference": 266,
+            "pairs": 12
+          },
+          {
+            "input_difference": 8192,
+            "output_difference": 14656,
+            "pairs": 6
+          },
+          {
+            "input_difference": 16384,
+            "output_difference": 1001,
+            "pairs": 5
+          },
+          {
+            "input_difference": 32768,
+            "output_difference": 18288,
+            "pairs": 6
+          }
+        ],
+        "low_byte_input_max": 12,
+        "high_byte_input_max": 32,
+        "max_ordered_count": 32,
+        "crosses_threshold": true
+      }
+    ]
+  },
+  "controls": {
+    "20261127": {
+      "rows": [
+        {
+          "input_difference": 1,
+          "output_difference": 4181,
+          "pairs": 5
+        },
+        {
+          "input_difference": 2,
+          "output_difference": 64136,
+          "pairs": 6
+        },
+        {
+          "input_difference": 4,
+          "output_difference": 232,
+          "pairs": 5
+        },
+        {
+          "input_difference": 8,
+          "output_difference": 11360,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16,
+          "output_difference": 2800,
+          "pairs": 5
+        },
+        {
+          "input_difference": 32,
+          "output_difference": 3188,
+          "pairs": 5
+        },
+        {
+          "input_difference": 64,
+          "output_difference": 19593,
+          "pairs": 6
+        },
+        {
+          "input_difference": 128,
+          "output_difference": 29482,
+          "pairs": 6
+        },
+        {
+          "input_difference": 256,
+          "output_difference": 19,
+          "pairs": 6
+        },
+        {
+          "input_difference": 512,
+          "output_difference": 37146,
+          "pairs": 6
+        },
+        {
+          "input_difference": 1024,
+          "output_difference": 50601,
+          "pairs": 6
+        },
+        {
+          "input_difference": 2048,
+          "output_difference": 9114,
+          "pairs": 7
+        },
+        {
+          "input_difference": 4096,
+          "output_difference": 10637,
+          "pairs": 6
+        },
+        {
+          "input_difference": 8192,
+          "output_difference": 4962,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16384,
+          "output_difference": 15853,
+          "pairs": 5
+        },
+        {
+          "input_difference": 32768,
+          "output_difference": 20903,
+          "pairs": 5
+        }
+      ],
+      "low_byte_input_max": 12,
+      "high_byte_input_max": 14,
+      "max_ordered_count": 14,
+      "crosses_threshold": false
+    },
+    "20261128": {
+      "rows": [
+        {
+          "input_difference": 1,
+          "output_difference": 44930,
+          "pairs": 6
+        },
+        {
+          "input_difference": 2,
+          "output_difference": 59431,
+          "pairs": 6
+        },
+        {
+          "input_difference": 4,
+          "output_difference": 10707,
+          "pairs": 5
+        },
+        {
+          "input_difference": 8,
+          "output_difference": 2694,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16,
+          "output_difference": 60709,
+          "pairs": 7
+        },
+        {
+          "input_difference": 32,
+          "output_difference": 4278,
+          "pairs": 5
+        },
+        {
+          "input_difference": 64,
+          "output_difference": 4255,
+          "pairs": 6
+        },
+        {
+          "input_difference": 128,
+          "output_difference": 57357,
+          "pairs": 6
+        },
+        {
+          "input_difference": 256,
+          "output_difference": 58501,
+          "pairs": 7
+        },
+        {
+          "input_difference": 512,
+          "output_difference": 2294,
+          "pairs": 6
+        },
+        {
+          "input_difference": 1024,
+          "output_difference": 2327,
+          "pairs": 5
+        },
+        {
+          "input_difference": 2048,
+          "output_difference": 50696,
+          "pairs": 6
+        },
+        {
+          "input_difference": 4096,
+          "output_difference": 60639,
+          "pairs": 6
+        },
+        {
+          "input_difference": 8192,
+          "output_difference": 45832,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16384,
+          "output_difference": 53314,
+          "pairs": 6
+        },
+        {
+          "input_difference": 32768,
+          "output_difference": 57051,
+          "pairs": 6
+        }
+      ],
+      "low_byte_input_max": 14,
+      "high_byte_input_max": 14,
+      "max_ordered_count": 14,
+      "crosses_threshold": false
+    },
+    "20261129": {
+      "rows": [
+        {
+          "input_difference": 1,
+          "output_difference": 20300,
+          "pairs": 6
+        },
+        {
+          "input_difference": 2,
+          "output_difference": 22977,
+          "pairs": 6
+        },
+        {
+          "input_difference": 4,
+          "output_difference": 23027,
+          "pairs": 6
+        },
+        {
+          "input_difference": 8,
+          "output_difference": 4763,
+          "pairs": 5
+        },
+        {
+          "input_difference": 16,
+          "output_difference": 43088,
+          "pairs": 6
+        },
+        {
+          "input_difference": 32,
+          "output_difference": 7118,
+          "pairs": 5
+        },
+        {
+          "input_difference": 64,
+          "output_difference": 19542,
+          "pairs": 6
+        },
+        {
+          "input_difference": 128,
+          "output_difference": 26465,
+          "pairs": 5
+        },
+        {
+          "input_difference": 256,
+          "output_difference": 5136,
+          "pairs": 5
+        },
+        {
+          "input_difference": 512,
+          "output_difference": 15486,
+          "pairs": 6
+        },
+        {
+          "input_difference": 1024,
+          "output_difference": 6845,
+          "pairs": 5
+        },
+        {
+          "input_difference": 2048,
+          "output_difference": 7435,
+          "pairs": 5
+        },
+        {
+          "input_difference": 4096,
+          "output_difference": 8279,
+          "pairs": 5
+        },
+        {
+          "input_difference": 8192,
+          "output_difference": 57204,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16384,
+          "output_difference": 9943,
+          "pairs": 5
+        },
+        {
+          "input_difference": 32768,
+          "output_difference": 8400,
+          "pairs": 6
+        }
+      ],
+      "low_byte_input_max": 12,
+      "high_byte_input_max": 12,
+      "max_ordered_count": 12,
+      "crosses_threshold": false
+    },
+    "20261130": {
+      "rows": [
+        {
+          "input_difference": 1,
+          "output_difference": 173,
+          "pairs": 5
+        },
+        {
+          "input_difference": 2,
+          "output_difference": 36482,
+          "pairs": 6
+        },
+        {
+          "input_difference": 4,
+          "output_difference": 1210,
+          "pairs": 5
+        },
+        {
+          "input_difference": 8,
+          "output_difference": 4671,
+          "pairs": 5
+        },
+        {
+          "input_difference": 16,
+          "output_difference": 6078,
+          "pairs": 6
+        },
+        {
+          "input_difference": 32,
+          "output_difference": 44162,
+          "pairs": 6
+        },
+        {
+          "input_difference": 64,
+          "output_difference": 1071,
+          "pairs": 5
+        },
+        {
+          "input_difference": 128,
+          "output_difference": 2658,
+          "pairs": 5
+        },
+        {
+          "input_difference": 256,
+          "output_difference": 45287,
+          "pairs": 6
+        },
+        {
+          "input_difference": 512,
+          "output_difference": 6222,
+          "pairs": 5
+        },
+        {
+          "input_difference": 1024,
+          "output_difference": 52066,
+          "pairs": 6
+        },
+        {
+          "input_difference": 2048,
+          "output_difference": 33270,
+          "pairs": 7
+        },
+        {
+          "input_difference": 4096,
+          "output_difference": 58769,
+          "pairs": 6
+        },
+        {
+          "input_difference": 8192,
+          "output_difference": 60256,
+          "pairs": 6
+        },
+        {
+          "input_difference": 16384,
+          "output_difference": 13253,
+          "pairs": 6
+        },
+        {
+          "input_difference": 32768,
+          "output_difference": 9470,
+          "pairs": 5
+        }
+      ],
+      "low_byte_input_max": 12,
+      "high_byte_input_max": 14,
+      "max_ordered_count": 14,
+      "crosses_threshold": false
+    }
+  }
+}
