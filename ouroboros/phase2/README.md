@@ -2,6 +2,7 @@
 
 Laboratório offline para a rede de Feistel sintética do EXP-008. Uso exclusivo de pesquisa. Para dados reais, use uma biblioteca mantida com AEAD estabelecido. A implementação e o oráculo congelados conservam seus nomes e semântica históricos.
 
+- [Demonstração prática em 16 bits](DEMO.md)
 - [Inventário das fontes](INVENTARIO.md)
 - [Decisões, critérios de refutação e agenda 2027](ARQUITETURA.md)
 - [Resultados locais](RESULTADOS.md)
