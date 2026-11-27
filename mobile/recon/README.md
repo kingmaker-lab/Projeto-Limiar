@@ -2,6 +2,8 @@
 
 *Projeto Limiar · Do Termux a Bug Hunter*
 
+Siga o [tutorial das dez ferramentas](TUTORIAL.md) para praticar com os arquivos fictícios do kit.
+
 Ferramenta de linha de comando para organizar URLs que você já coletou. Compara as origens com uma lista de escopo declarada por você, remove duplicatas e produz um inventário JSON. Funciona sem conexão depois que os arquivos e o Python estiverem instalados. A ferramenta lê apenas arquivos locais.
 
 ## Executar no Android com Termux

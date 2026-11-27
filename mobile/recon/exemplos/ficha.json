@@ -1,0 +1,10 @@
+{
+  "titulo": "Divergência de acesso na política fictícia do Caderno",
+  "escopo": "Exercício offline da Mobile Division",
+  "ambiente": "Revisão local da política fictícia",
+  "procedimento": "Comparei os três casos com a regra de leitura do Caderno.",
+  "esperado": "O caso C2 deveria negar leitura a outro membro.",
+  "observado": "O arquivo da política registra permitir para C2.",
+  "impacto": "Se aplicada, a política pode permitir leitura por outro membro.",
+  "evidencia": "Caso C2 em lab/politica.json."
+}
