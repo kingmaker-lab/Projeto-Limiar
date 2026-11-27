@@ -1,7 +1,16 @@
-.PHONY: start validate
+.PHONY: start list run validate
+
+PYTHON ?= python3
 
 start:
-	@python3 telemetry/replay.py
+	@$(PYTHON) -B telemetry/replay.py
+
+list:
+	@$(PYTHON) -B run.py --list
+
+run:
+	@$(PYTHON) -B run.py $(TAR)
 
 validate:
-	python3 -B -m unittest discover -s telemetry -v
+	$(PYTHON) -B -m unittest discover -s telemetry -v
+	$(PYTHON) -B -m unittest discover -s tests -v

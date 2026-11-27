@@ -1,0 +1,27 @@
+name: TARTARUS
+
+on:
+  push:
+    paths:
+      - "tartarus/**"
+      - ".github/workflows/tartarus.yml"
+  pull_request:
+    paths:
+      - "tartarus/**"
+      - ".github/workflows/tartarus.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - run: make -C tartarus validate
+      - run: python3 -B tartarus/run.py > tartarus-report.json
+      - run: cat tartarus-report.json
+        if: ${{ always() }}

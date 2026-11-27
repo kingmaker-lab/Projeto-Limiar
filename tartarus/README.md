@@ -1,6 +1,6 @@
 # TARTARUS
 
-Laboratório defensivo offline do Projeto Limiar. Os experimentos usam código próprio, configurações revisáveis e dados sintéticos. O primeiro exercício executável valida eventos de auditoria e reproduz uma detecção de mudança de política rejeitada.
+Laboratório defensivo offline do Projeto Limiar. Os experimentos usam código próprio, configurações revisáveis e dados sintéticos. Seis experimentos verificam controles locais e registram os resultados em JSON versionado.
 
 ## Executar no Debian
 
@@ -11,9 +11,17 @@ make -C tartarus validate
 make -C tartarus start
 ```
 
-`validate` roda os testes. `start` lê a amostra e emite um resumo JSON com dois eventos e um identificador de alerta. A execução encerra automaticamente. Para interrompê-la, use Ctrl+C. Para repetir o ensaio desde o início, rode `start` novamente. Caso queira guardar o resumo, redirecione a saída de `python3 tartarus/telemetry/replay.py` para um arquivo à sua escolha.
+`validate` roda os testes. `start` mantém a interface original para o replay de Hades. Os comandos terminam automaticamente. Use Ctrl+C para interromper uma execução ou repita o comando para recomeçar com as mesmas amostras.
 
-O replay lê apenas a amostra versionada. Use dados inventados nos ensaios, mantenha credenciais e registros reais fora do repositório e execute como usuário comum. Os seis ambientes vulneráveis citados no planejamento ficaram fora deste incremento.
+```sh
+make -s -C tartarus list
+make -s -C tartarus run TAR=TAR-004
+python3 -B tartarus/run.py > tartarus-report.json
+```
+
+O relatório tem `schema_version` igual a `1`, resultado geral em `passed` e resultados por experimento em `experiments`. O comando retorna `0` se os resultados coincidirem com as expectativas, `1` se algum divergir e `2` em caso de seleção ou configuração inválida. O GitHub Actions executa os testes e publica o relatório no log da validação.
+
+Use dados inventados nos ensaios, mantenha credenciais e registros reais fora do repositório e execute como usuário comum. O laboratório opera sobre amostras versionadas e o resultado cobre apenas os critérios de cada cenário.
 
 ## Trilhas e experimentos
 
@@ -28,4 +36,4 @@ O replay lê apenas a amostra versionada. Use dados inventados nos ensaios, mant
 | TAR-007 Nemesis | [Código seguro](secure-coding/README.md) | Validar limites de entrada com testes de regressão. |
 | TAR-008 Hades | [Engenharia de detecção](detection-engineering/README.md) | Gerar um alerta para uma alteração rejeitada e nenhum para a alteração aceita. |
 
-Hades tem amostra e testes executáveis. Os demais critérios definem o roteiro de pesquisa. Consulte o [contrato dos eventos](telemetry/README.md) e o [registro de pesquisa e integrações](research/README.md).
+Pandora, Hydra, Minotaur, Charon, Nemesis e Hades são executáveis. Medusa e Hecate seguem no roteiro de pesquisa. Consulte o [contrato dos eventos](telemetry/README.md) e o [registro de pesquisa e integrações](research/README.md).
