@@ -15,6 +15,12 @@ O Limiar investiga o que arquiteturas compactas conseguem fazer sob restrições
 | **OUROBOROS Fase II** · O Limiar da Serpente | Que propriedades uma rede de Feistel de 16 bits apresenta em condições experimentais controladas? | [Laboratório offline, dados sintéticos e roteiro de reprodução](ouroboros/phase2/README.md) |
 | **JANUS** · Beyond Language | Uma arquitetura compacta consegue representar significado, interpretar contexto e produzir inferências verificáveis sem depender de um LLM em execução? | [Protocolo, hipóteses e roadmap](janus/README.md) |
 
+## Ouroboros Fase II · Resultados
+
+Nos ensaios diferenciais com entradas de um e dois bits alterados, **o excesso observado em oito rodadas ficou abaixo dos limiares ajustados em nove e doze** nas oito chaves sintéticas avaliadas. Os ensaios lineares com máscaras de até dois bits ficaram abaixo dos limiares em todas as configurações, sem vantagem consistente de doze sobre nove no recorte medido.
+
+Nove rodadas são a menor configuração avaliada que ficou abaixo de ambos os limiares diferenciais em todas as chaves. O modelo segue restrito à pesquisa experimental com blocos de 16 bits e chaves de 32 bits. A reprodução independente está pendente. [Resultados, critérios e dados](ouroboros/phase2/README.md#resultados-e-conclusões)
+
 ## JANUS · Beyond Language
 
 Derivado do **Argus Project v0.4**, JANUS começa pela auditoria do tokenizador e dos mecanismos de análise. O relatório da auditoria orientará o reaproveitamento do Argus e a definição de uma linha de base reproduzível.
