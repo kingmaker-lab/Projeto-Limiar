@@ -1,0 +1,10 @@
+/*/.build/
+/*/.zig-cache/
+/*/.gradle/
+/*/build/
+/*/dist/
+/*/node_modules/
+/*/_build/
+/*/target/
+/*/local.properties
+/004-hermes-go/messages.json

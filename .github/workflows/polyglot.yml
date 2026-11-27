@@ -1,0 +1,119 @@
+name: Operação Polyglot
+on:
+  push:
+    paths: ['polyglot/**', '.github/workflows/polyglot.yml']
+  pull_request:
+    paths: ['polyglot/**', '.github/workflows/polyglot.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    name: ${{ matrix.language }}
+    runs-on: ubuntu-latest
+    container: debian:13-slim
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: C
+            project: 001-hephaestus-c
+            packages: gcc libc6-dev
+            command: cc -std=c11 -O2 -Wall -Wextra -Werror arena.c test.c -o .build/test && .build/test && cc -std=c11 -Wall -Wextra -Werror arena.c main.c -o .build/app && .build/app
+          - language: C++
+            project: 002-titan-cpp
+            packages: g++
+            command: c++ -std=c++17 -O2 -Wall -Wextra -Werror simulation.cpp test.cpp -o .build/test && .build/test && c++ -std=c++17 -Wall -Wextra -Werror simulation.cpp main.cpp -o .build/app && .build/app
+          - language: Rust
+            project: 003-aegis-rust
+            packages: cargo rustc
+            command: cargo test
+          - language: Go
+            project: 004-hermes-go
+            packages: golang-go gcc libc6-dev
+            command: go test -race ./...
+          - language: Ruby
+            project: 005-midas-ruby
+            packages: ruby ruby-csv
+            command: ruby test.rb && ruby main.rb partner example.csv
+          - language: Zig
+            project: 006-vulcan-zig
+            packages: curl xz-utils
+            command: |
+              curl -fsSLo .build/zig.tar.xz https://ziglang.org/download/0.14.1/zig-x86_64-linux-0.14.1.tar.xz
+              echo "24aeeec8af16c381934a6cd7d95c807a8cb2cf7df9fa40d359aa884195c4716c  .build/zig.tar.xz" | sha256sum -c -
+              tar -xJf .build/zig.tar.xz -C .build
+              zig=.build/zig-x86_64-linux-0.14.1/zig
+              "$zig" test store.zig
+              "$zig" build-exe main.zig -femit-bin=.build/vulcan
+              .build/vulcan put .build/data verified yes
+              test "$(.build/vulcan get .build/data verified)" = yes
+          - language: Assembly
+            project: 007-daedalus-asm
+            packages: gcc libc6-dev
+            command: cc -O2 -Wall -Wextra -Werror math.S test.c -o .build/test && .build/test
+          - language: Java
+            project: 009-imperium-java
+            packages: openjdk-21-jdk-headless
+            command: javac -d .build *.java && java -ea -cp .build InventoryTest
+          - language: TypeScript
+            project: 010-nexum-typescript
+            packages: nodejs npm
+            command: npm ci --no-audit --no-fund && npm test
+          - language: Elixir
+            project: 011-hydra-elixir
+            packages: elixir
+            command: |
+              mix test
+              mix escript.build
+              printf 'hello\n' | .build/hydra ops | grep -Fx '[ops] hello'
+          - language: Haskell
+            project: 012-logos-haskell
+            packages: ghc
+            command: runghc Test.hs && ghc -Wall -outputdir .build -o .build/logos Main.hs && .build/logos eval '1 + 2 * 3'
+          - language: Julia
+            project: 013-athena-julia
+            packages: curl
+            command: |
+              curl -fsSLo .build/julia.tar.gz https://julialang-s3.julialang.org/bin/linux/x64/1.11/julia-1.11.5-linux-x86_64.tar.gz
+              echo "723e878c642220cc0251a0e13758c059a389cadc7f01376feaf1ea7388fe8f9c  .build/julia.tar.gz" | sha256sum -c -
+              tar -xzf .build/julia.tar.gz -C .build
+              .build/julia-1.11.5/bin/julia --startup-file=no test.jl
+          - language: Lua
+            project: 014-chronos-lua
+            packages: lua5.4
+            command: lua5.4 test.lua && lua5.4 main.lua
+          - language: Python
+            project: 015-gaia-python
+            packages: python3
+            command: python3 -B -m unittest -v && python3 -B main.py example.csv --baseline 2020
+    steps:
+      - run: |
+          apt-get update
+          apt-get install -y --no-install-recommends ca-certificates git ${{ matrix.packages }}
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - working-directory: polyglot/${{ matrix.project }}
+        run: |
+          mkdir -p .build
+          ${{ matrix.command }}
+  android:
+    name: Kotlin / Android
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+      - run: gradle --no-daemon testDebugUnitTest assembleDebug
+        working-directory: polyglot/008-pulse-kotlin
