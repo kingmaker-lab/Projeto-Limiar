@@ -55,10 +55,41 @@ def read_origins(path, *, scope=False):
     return origins
 
 
+def markdown_inventory(matched, unmatched):
+    lines = [
+        "# Caderno de escopo",
+        "",
+        "- Programa e link da política:",
+        "- Data da consulta:",
+        "- Métodos permitidos e restrições:",
+        "- Canal privado de envio:",
+        "",
+        "## Correspondem à lista",
+        "",
+    ]
+    lines.extend([f"- [ ] `{item}`" for item in matched] or ["Nenhuma origem."])
+    lines.extend(["", "## Sem correspondência na lista", ""])
+    lines.extend([f"- [ ] `{item}`" for item in unmatched] or ["Nenhuma origem."])
+    lines.extend([
+        "",
+        "## Registro de observação",
+        "",
+        "- Ativo e regra aplicável:",
+        "- Comportamento esperado:",
+        "- Comportamento observado:",
+        "- Evidência mínima:",
+        "- Impacto e condições:",
+        "- Próxima ação:",
+    ])
+    return "\n".join(lines)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--scope", required=True, type=Path, help="origens autorizadas")
     parser.add_argument("--urls", required=True, type=Path, help="URLs coletadas manualmente")
+    parser.add_argument("--format", choices=("json", "markdown"), default="json",
+                        help="formato do inventário (padrão: json)")
     args = parser.parse_args()
 
     try:
@@ -70,12 +101,17 @@ def main():
         print(f"recon: {exc}", file=sys.stderr)
         return 2
 
-    print(json.dumps({
-        "schema": 1,
-        "matched": sorted(origins & scope),
-        "unmatched": sorted(origins - scope),
-        "total_origins": len(origins),
-    }, indent=2))
+    matched = sorted(origins & scope)
+    unmatched = sorted(origins - scope)
+    if args.format == "markdown":
+        print(markdown_inventory(matched, unmatched))
+    else:
+        print(json.dumps({
+            "schema": 1,
+            "matched": matched,
+            "unmatched": unmatched,
+            "total_origins": len(origins),
+        }, indent=2))
     return 0
 
 

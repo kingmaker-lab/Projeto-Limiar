@@ -11,10 +11,10 @@ HERE = Path(__file__).resolve().parent
 
 
 class ReconTest(unittest.TestCase):
-    def run_cli(self, scope):
+    def run_cli(self, scope, *options):
         return subprocess.run(
             [sys.executable, str(HERE / "recon.py"), "--scope", str(scope),
-             "--urls", str(HERE / "urls.exemplo.txt")],
+             "--urls", str(HERE / "urls.exemplo.txt"), *options],
             capture_output=True, text=True,
         )
 
@@ -27,6 +27,15 @@ class ReconTest(unittest.TestCase):
             "unmatched": ["http://app.example.com", "https://cdn.app.example.com"],
             "total_origins": 4,
         })
+        self.assertNotIn("token", result.stdout)
+
+    def test_markdown_notebook(self):
+        result = self.run_cli(HERE / "escopo.exemplo.txt", "--format", "markdown")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        matched, unmatched = result.stdout.split("## Sem correspondência na lista")
+        self.assertIn("- [ ] `https://app.example.com`", matched)
+        self.assertIn("- [ ] `http://app.example.com`", unmatched)
+        self.assertIn("## Registro de observação", unmatched)
         self.assertNotIn("token", result.stdout)
 
     def test_invalid_scope(self):
