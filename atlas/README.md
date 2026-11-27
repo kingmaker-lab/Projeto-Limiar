@@ -80,9 +80,21 @@ O transporte envia o ledger inteiro em JSON, até 8 MiB, com tempo limite de 10 
 
 `sh demo-sync.sh ./atlas` inicia um servidor em porta efêmera, copia o primeiro bloco, encerra o servidor, registra uma transferência e reinicia a origem. Depois da segunda sincronização, compara os estados e os arquivos dos dois nós.
 
+## Teste de interoperabilidade
+
+Os auditores de referência em JavaScript e Ruby leem o endpoint do CLI Go e reconstroem, de forma independente, a gênese, os hashes dos blocos, a emissão, os saldos e os nonces. Cada auditor verifica assinaturas P-256. O JavaScript também cria uma assinatura que o nó Go inclui no ledger.
+
+Depois de compilar o CLI, execute com Node 22+ e Ruby 3.3+ com OpenSSL. O teste usa carteiras descartáveis e abre uma porta efêmera somente em `127.0.0.1`.
+
+```sh
+node interop/check.mjs ./atlas
+```
+
+O executor compara os estados completos e testa os três verificadores com as mesmas amostras inválidas. Os dois auditores são ferramentas de teste para dados locais controlados. O auditor Ruby usa a conversão de `r || s` para ASN.1 DER exigida por sua interface OpenSSL.
+
 ## Evolução
 
-1. **Protocolo e intercâmbio.** Congelar vetores cruzados Go/TypeScript, acrescentar exportação com versão e impor limites antes de aceitar mensagens. Critério de aceite: implementações independentes calculam a mesma âncora, os mesmos hashes e verificam as mesmas assinaturas.
+1. **Protocolo e intercâmbio.** O ensaio Go, JavaScript e Ruby já verifica a reconstrução do estado e a compatibilidade de assinaturas a partir de um ledger gerado a cada execução. O próximo passo é congelar vetores estáticos e consumi-los também no futuro explorador TypeScript.
 2. **Sincronização incremental.** A sincronização por instantâneo em loopback já permite reiniciar a origem e atualizar uma réplica independente. A próxima etapa é negociar versão e rede antes da transferência dos blocos e buscar lotes a partir de uma ponta conhecida. Critério: retomar o download após interrupção sem baixar todo o histórico e sem aceitar um lote ligado à ponta errada.
 3. **Consenso experimental.** Especificar seleção por trabalho acumulado, empates, reorganizações e revalidação de transações pendentes. Exercitar partições, blocos conflitantes e reconvergência. Avaliar UTXO em uma versão separada se a pesquisa exigir validação por saída, com vetores de gasto duplo por referência.
 4. **Integração.** Acrescentar exploração somente leitura em TypeScript e publicar evidências no portal após os ensaios locais. Uma pesquisa de consenso inspirada em Ouroboros exige especificação própria. A rede de Feistel sintética estudada no Limiar é um experimento diferente.

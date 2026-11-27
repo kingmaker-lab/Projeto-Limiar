@@ -29,3 +29,16 @@ Os READMEs originais registram as publicações no Cloudflare Pages. Para o EXP-
 ```sh
 GOMAXPROCS=1 GOMEMLIMIT=32MiB taskset -c 0 sh demo-sync.sh ./atlas
 ```
+
+## Interoperabilidade
+
+O ensaio usou Go 1.24.4, Node 24.22.1 e Ruby 3.3.13 com OpenSSL 3.5.7. JavaScript e Ruby consultaram o servidor Go em loopback. Ambos reconstruíram o mesmo estado completo apresentado pelo CLI, incluindo a ponta e os nonces.
+
+- Uma transferência de 17 unidades foi assinada em Go e verificada nos dois clientes.
+- Uma transferência de volta de 5 unidades foi assinada em JavaScript, minerada pelo nó Go e verificada também em Ruby.
+- O estado final teve três blocos, 150 unidades emitidas, Alice com 138 e Bob com 12. Cada conta tinha nonce 1.
+- Os três verificadores rejeitaram valor adulterado, replay e hash de bloco inválido. O executor refez a prova de trabalho nos casos de adulteração e replay para isolar a falha de assinatura ou nonce.
+
+```sh
+node interop/check.mjs ./atlas
+```
