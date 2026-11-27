@@ -23,3 +23,7 @@ Quinze aplicações independentes do Projeto Limiar, cada uma implementada e tes
 O [workflow](../.github/workflows/polyglot.yml) roda um job por linguagem. As aplicações de terminal usam Debian 13 no CI. O Android usa o SDK em um runner Ubuntu, sem emulador. Consulte os [resultados e limites da verificação local](VERIFICACAO.md).
 
 A [licença MIT](LICENSE) cobre os arquivos da operação.
+
+## Experimento integrado
+
+O [roteiro de auditoria climática](experiments/climate-audit/) conecta Gaia, Hermes e Aegis. O teste verifica persistência após reinício e detecta uma alteração de um byte, mesmo quando os dados JSON continuam equivalentes.

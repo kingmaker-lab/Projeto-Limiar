@@ -24,3 +24,5 @@ go test -race ./...
 ```
 
 Licença [MIT](../LICENSE).
+
+Com `-port 0`, o Linux escolhe uma porta livre em loopback. O Hermes escreve uma linha com a URL em stdout depois de abrir o socket. Isso permite executar testes em paralelo sem reservar uma porta fixa.

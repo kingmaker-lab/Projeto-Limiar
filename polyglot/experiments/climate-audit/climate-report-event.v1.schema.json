@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Climate report event v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "type", "report_id", "period", "sha256"],
+  "properties": {
+    "version": {"const": 1},
+    "type": {"const": "climate.report.published"},
+    "report_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{0,63}$"},
+    "period": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "through"],
+      "properties": {
+        "from": {"type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"},
+        "through": {"type": "string", "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"}
+      }
+    },
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+  }
+}

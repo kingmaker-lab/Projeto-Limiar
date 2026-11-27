@@ -6,7 +6,9 @@ import (
 	"flag"
 	"io"
 	"log"
+	"net"
 	"net/http"
+	"os"
 	"strconv"
 	"time"
 )
@@ -57,7 +59,7 @@ func main() {
 	path := flag.String("file", "messages.json", "snapshot path")
 	port := flag.Uint("port", 8080, "loopback port")
 	flag.Parse()
-	if *port == 0 || *port > 65535 {
+	if *port > 65535 {
 		log.Fatal("invalid port")
 	}
 	store, err := Open(*path)
@@ -66,5 +68,14 @@ func main() {
 	}
 	server := &http.Server{Addr: "127.0.0.1:" + strconv.FormatUint(uint64(*port), 10),
 		Handler: handler(store), ReadTimeout: 5 * time.Second, WriteTimeout: 10 * time.Second}
-	log.Fatal(server.ListenAndServe())
+	listener, err := net.Listen("tcp", server.Addr)
+	if err != nil {
+		log.Fatal(err)
+	}
+	if *port == 0 {
+		if _, err := os.Stdout.WriteString("http://" + listener.Addr().String() + "\n"); err != nil {
+			log.Fatal(err)
+		}
+	}
+	log.Fatal(server.Serve(listener))
 }

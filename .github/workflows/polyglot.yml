@@ -99,6 +99,19 @@ jobs:
         run: |
           mkdir -p .build
           ${{ matrix.command }}
+  climate-audit:
+    name: Integração Gaia · Hermes · Aegis
+    runs-on: ubuntu-latest
+    container: debian:13-slim
+    timeout-minutes: 10
+    steps:
+      - run: |
+          apt-get update
+          apt-get install -y --no-install-recommends ca-certificates git python3 golang-go cargo curl jq time
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+          persist-credentials: false
+      - run: bash polyglot/experiments/climate-audit/run.sh
   android:
     name: Kotlin / Android
     runs-on: ubuntu-latest
