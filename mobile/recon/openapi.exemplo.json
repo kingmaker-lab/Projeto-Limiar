@@ -1,0 +1,13 @@
+{
+  "openapi": "3.1.0",
+  "info": {"title": "Caderno (fictício)", "version": "1.0"},
+  "paths": {
+    "/rascunhos": {
+      "get": {"responses": {"200": {"description": "Lista de rascunhos"}}},
+      "post": {"responses": {"201": {"description": "Rascunho criado"}}}
+    },
+    "/rascunhos/{id}": {
+      "get": {"responses": {"200": {"description": "Detalhes do rascunho"}}}
+    }
+  }
+}

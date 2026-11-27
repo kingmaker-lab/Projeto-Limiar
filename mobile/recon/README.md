@@ -47,3 +47,16 @@ python3 recon.py --scope escopo.txt --urls urls.txt --format markdown > caderno.
 Preencha o link da política e a data da consulta. Use as caixas para marcar as origens que você já revisou na política. Quando tiver uma observação, preencha o que esperava ver, o que observou e qual evidência sustenta a conclusão. Esse registro pode ser usado como rascunho do relatório no canal indicado pelo programa.
 
 Para experimentar o fluxo inteiro com dados fictícios, use os dois arquivos de exemplo e escreva um relato com o [exercício do Caderno](https://github.com/kingmaker-lab/Projeto-Limiar/blob/f9ec420a3d4d45cf0a9d949c1adc1e0e613e29ff/mobile/bug-bounty/README.md).
+
+## Explorador passivo de endpoints
+
+Use `endpoints.py` para conferir quais rotas e métodos já estão declarados em um arquivo OpenAPI **3.0 ou 3.1 em JSON**. Na mesma pasta:
+
+```sh
+python3 endpoints.py openapi.exemplo.json
+python3 endpoints.py openapi.exemplo.json --format json > endpoints.json
+```
+
+O exemplo do Caderno lista três operações. `POST` e `GET` na mesma rota aparecem separadamente, e parâmetros como `{id}` ficam no formato documentado. Com um arquivo próprio, substitua `openapi.exemplo.json` pelo caminho local.
+
+A ferramenta lê apenas `paths` do arquivo fornecido. Ela mantém referências `$ref` como pendências, sem abri-las. A lista descreve o contrato documentado, e o programa de bug bounty define separadamente quais ativos e atividades fazem parte do escopo.
