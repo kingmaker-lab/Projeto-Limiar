@@ -18,6 +18,14 @@ cd mobile/recon
 
 Depois de instalar os pacotes e copiar o repositório, os comandos funcionam offline. Os arquivos de entrada ficam nesta pasta e em [exemplos](exemplos/). Cada comando pode rodar por conta própria.
 
+## Rode sua primeira prática
+
+```sh
+sh pratica.sh
+```
+
+O comando imprime o caminho de uma pasta nova com os resultados das dez ferramentas. Comece por `caderno.md` para revisar o escopo e termine em `relatorio.md` para comparar o resultado esperado com o observado. A prática calcula o hash da resposta fictícia original e verifica a cópia criada na pasta. Cada execução cria uma pasta própria, inclusive quando você roda o mesmo exercício de novo. Passe o caminho de uma pasta existente como argumento para escolher onde guardar os resultados.
+
 ## Revise o escopo e o contrato
 
 ### 1. Inventário de escopo

@@ -2,7 +2,7 @@
 
 *Projeto Limiar · Do Termux a Bug Hunter*
 
-Siga o [tutorial das dez ferramentas](TUTORIAL.md) para praticar com os arquivos fictícios do kit.
+Execute `sh pratica.sh` para rodar as dez ferramentas com o Caderno. O [tutorial](TUTORIAL.md) mostra como revisar os resultados e usar cada ferramenta separadamente.
 
 Ferramenta de linha de comando para organizar URLs que você já coletou. Compara as origens com uma lista de escopo declarada por você, remove duplicatas e produz um inventário JSON. Funciona sem conexão depois que os arquivos e o Python estiverem instalados. A ferramenta lê apenas arquivos locais.
 
