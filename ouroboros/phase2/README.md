@@ -7,6 +7,7 @@ Laboratório offline para a rede de Feistel sintética do EXP-008. Uso exclusivo
 - [Resultados locais](RESULTADOS.md)
 - [Campanha diferencial com novas chaves](DIFERENCIAL.md)
 - [Análise diferencial por rodada](RODADAS.md)
+- [Comparação diferencial com o sufixo Feistel](SUFIXO.md)
 
 Na raiz do projeto, com Python 3.11+ e biblioteca padrão:
 

@@ -22,15 +22,16 @@ def overlap_upper_bound(size, pairs):
     return min(Fraction(1), Fraction(numerator, denominator))
 
 
+def histogram(table, delta):
+    return Counter(value ^ table[index ^ delta]
+                   for index, value in enumerate(table) if not index & delta)
+
+
 def row_maxima(table, differences):
     rows = []
     for delta in differences:
-        histogram = Counter(
-            value ^ table[index ^ delta]
-            for index, value in enumerate(table)
-            if not index & delta
-        )
-        output, pairs = max(histogram.items(), key=lambda item: (item[1], -item[0]))
+        counts = histogram(table, delta)
+        output, pairs = max(counts.items(), key=lambda item: (item[1], -item[0]))
         rows.append({"input_difference": delta, "output_difference": output, "pairs": pairs})
     return rows
 
