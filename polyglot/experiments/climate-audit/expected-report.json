@@ -1,0 +1,7 @@
+{
+  "2024-01": {"days": 2, "mean_temperature_c": 22, "precipitation_mm": 5, "temperature_anomaly_c": 0},
+  "2024-02": {"days": 1, "mean_temperature_c": 21, "precipitation_mm": 4, "temperature_anomaly_c": 0},
+  "2025-01": {"days": 1, "mean_temperature_c": 26, "precipitation_mm": 0, "temperature_anomaly_c": 4},
+  "2025-02": {"days": 1, "mean_temperature_c": 19, "precipitation_mm": 2, "temperature_anomaly_c": -2},
+  "2025-03": {"days": 1, "mean_temperature_c": 23, "precipitation_mm": 1, "temperature_anomaly_c": null}
+}

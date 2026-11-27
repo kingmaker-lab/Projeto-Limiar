@@ -1,0 +1,8 @@
+local limiter = require("limiter").new(3, 2)
+assert(limiter:admit("a", 0, 2))
+local allowed, retry = limiter:admit("a", 100, 1)
+assert(not allowed and retry == 234)
+assert(limiter:admit("b", 100, 2))
+assert(limiter:admit("a", 334, 1))
+assert(not pcall(limiter.admit, limiter, "a", 333, 1))
+assert(not pcall(limiter.admit, limiter, "a", 400, 3))
